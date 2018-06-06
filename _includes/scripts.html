@@ -1,0 +1,52 @@
+
+<script type="text/javascript">
+;$(function() {
+    var goToHash = function( target ) {
+        target = $(target);
+        if (target.length) {
+            $('html,body').animate({
+                scrollTop: target.offset().top - 51
+            }, 1000);
+        }
+    };
+
+    //$('.parallax-container').css('background','none');
+
+    $('a[href^=#]:not([href=#])').on("click", function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            goToHash( this.hash );
+            return false;
+        }
+    });
+    if ( self.document.location.hash ) {
+        goToHash( self.document.location.hash );
+    }
+
+    $(".antispamEmail").on("click", function() {
+        var $t = $(this);
+
+        var params = "",
+            param = $t.data("cc");
+        if (param) {
+            params += "&cc=" + param.replace("%28%40%29", "%40");
+        }
+        param = $t.data("bcc");
+        if (param) {
+            params += "&bcc=" + param.replace("%28%40%29", "%40");
+        }
+        param = $t.data("subject");
+        if (param) {
+            params += "&subject=" + param;
+        }
+        param = $t.data("body");
+        if (param) {
+            params += "&body=" + param;
+        }
+
+        window.location.href =
+            "mailto:" + $t.data("to").replace("~at~", "%40")
+            + (params == "" ? "" : "?" + params.substring(1));
+        return false;
+    });
+});
+</script>

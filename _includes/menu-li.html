@@ -1,0 +1,10 @@
+{% comment %}
+INPUT {
+    text: string,
+    href: string,
+    _title: string
+}
+{% endcomment %}
+<li class="nav-item{%if page.url==include.href%} active{%endif%}">
+    <a class="nav-link" href="{{include.href|relative_url}}"{%if include._title%} title="{{include._title}}"{%endif%}>{{include.text}}</a>
+</li>

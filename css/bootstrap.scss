@@ -1,0 +1,22 @@
+---
+---
+
+$web-font-path: "https://fonts.googleapis.com/css?family=Neucha|Rammetto+One";
+$headings-font-family: 'Rammetto One', cursive;
+
+$primary:   #56002A;
+$secondary: #790E42;
+
+@import '_variables.scss';
+@import 'bootstrap/bootstrap.scss';
+@import '_bootswatch.scss';
+
+
+.parallax-container {
+    padding-top:1px;
+    padding-bottom:1px;
+    h1 { line-height: 1.3; }
+    .bg-dark { background-color: rgba($dark,.6); }
+    .bg-primary { background-color: rgba($primary, 0.5); }
+}
+.parallax-full-height{min-height:400px; height: 100vh}
