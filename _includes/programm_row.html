@@ -1,0 +1,20 @@
+<div class="row align-items-center">
+    <div class="col-sm-2 col-lg-1 text-center">
+        <p class="bg-primary m-0">{{include.hour}}</p>
+    </div>
+    <div class="col clearfix{% if include.content_position != 'right' %} order-sm-first{% endif %}">
+        <div class="popover position-relative text-dark mx-auto mx-sm-0 {% if include.content_position == 'right' %}float-sm-left bs-popover-right{% else %}float-sm-right bs-popover-left{% endif %}">
+            <div class="arrow d-none d-sm-block"></div>
+{% if include.header %}
+            <h3 class="popover-header clearfix">{{ include.header }}</h3>
+{% endif %}
+{% if include.img_url %}
+            <img class="img-fluid" src="{{ include.img_url }}" alt="{{ include.img_title }}" />
+{% endif %}
+{% if include.body %}
+            <div class="popover-body">{{ include.body }}</div>
+{% endif %}
+        </div>
+    </div>
+    <div class="col d-none d-sm-block{% if include.content_position == 'right' %} order-sm-first{% endif %}"></div>
+</div>

@@ -12,7 +12,7 @@
 
     //$('.parallax-container').css('background','none');
 
-    $('a[href^=#]:not([href=#])').on("click", function() {
+    $('a[href^="#"]:not([href="#"])').on("click", function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
             goToHash( this.hash );
             return false;
@@ -48,5 +48,10 @@
             + (params == "" ? "" : "?" + params.substring(1));
         return false;
     });
+    /**/
+    $(function () {
+        $('[data-toggle="popover"]').popover()
+    })
+    /**/
 });
 </script>
