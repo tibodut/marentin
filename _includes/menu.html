@@ -6,8 +6,8 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-            {%include menu-li.html text='Présentation' href='/' _title='Festival le Marentin'%}
-                        <li class="nav-item dropdown{%if ['/edition-2015', '/edition-2016'] contains page.url%} active{%endif%}">
+            {%include menu-li.html text='Présentation' href='/' _title='Festival Le Marentin'%}
+            <li class="nav-item dropdown{%if ['/edition-2015', '/edition-2016'] contains page.url%} active{%endif%}">
                 <a class="nav-link dropdown-toggle" href="#" id="previous-editions" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Les éditions précédentes</a>
                 <div class="dropdown-menu" aria-labelledby="previous-editions">
                     <a class="dropdown-item" href="{{'/edition-2015'|relative_url}}">Édition 2015</a>
@@ -18,7 +18,7 @@
             {%include menu-li.html text='Soutenir le projet' href='/soutien'%}
         </ul>
         <ul class="navbar-nav">
-            <li class="nav-item"><a href="mailto:lescordesassociees@gmail.com" class="nav-link antispamEmail" title="Nous contacter" data-to="{{site.email|replace_first:'@','~at~'}}" data-subject="[lescordesassociees.fr/marentin] Question d'internaute"><span class="fas fa-envelope fa-2x"></span><span class="sr-only"> Nous contacter</span></a></li>
+            <li class="nav-item"><a href="#" class="nav-link antispamEmail" title="Nous contacter" data-to="{{site.email|replace_first:'@','~at~'}}" data-subject="[{{site.title}}] Question d'internaute"><span class="fas fa-envelope fa-2x"></span><span class="sr-only"> Nous contacter</span></a></li>
             <li class="nav-item"><a href="https://www.facebook.com/festival.le.marentin/" class="nav-link"><span class="fab fa-facebook fa-2x"></span><span class="sr-only"> Notre Facebook</span></a></li>
         </ul>
     </div>

@@ -1,0 +1,18 @@
+---
+---
+
+@import '_variables_override.scss';
+@import '_variables.scss';
+
+html, body { height: 100% }
+body { padding-top: 54px }
+
+.border-primary {border-color:$primary}
+
+[data-parallax] .bg-primary, [data-parallax] .bg-dark { line-height: 1.4 }
+
+.popover-static {display: block;position:relative;margin:auto;z-index:0}
+.popover-static.left {margin:0 10px 0 0}
+.popover img {max-width:100%}
+.timeline-line {position:relative; z-index:0;text-align:center}
+.timeline-line:before {content:""; width:50%; height:100%; position:absolute; top:0; left:-1px; border-right:1px solid white; z-index:-1}

@@ -1,4 +1,4 @@
-title: Marentin
+title: Le Marentin
 email: lescordesassociees@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Le Marentin est un festival d'art de rue dans la communauté de communes de
@@ -28,3 +28,13 @@ exclude:
   - .git
   - .bundle
   - .svn
+
+mini_magick:
+  sm:
+    source: img/original
+    destination: img/sm
+    resize: "100"
+  md:
+    source: img/original
+    destination: img/md
+    resize: "600"
