@@ -39,6 +39,16 @@ layout: default
 <div id="le-programme" class="bg-secondary padding-top padding-bottom text-white py-5">
     <div class="container">
         <h2>Le Programme</h2>
+        <p>Vendredi</p>
+<a class="btn btn-default" href="#vendredi1" role="button" style="background:rgba(255,255,255,.7)"><span class="glyphicon glyphicon-map-marker"></span> 18h-20h</a></p>
+<a class="btn btn-default" href="#vendredi2" role="button" style="background:rgba(255,255,255,.7)"><span class="glyphicon glyphicon-map-marker"></span>20h-22h</a></p>
+  <p>Samedi</p>
+<a class="btn btn-default" href="#samedi1" role="button" style="background:rgba(255,255,255,.7)"><span class="glyphicon glyphicon-map-marker"></span> 11h-14h</a></p>
+<a class="btn btn-default" href="#samedi2" role="button" style="background:rgba(255,255,255,.7)"><span class="glyphicon glyphicon-map-marker"></span> 14h-16h</a></p>
+<a class="btn btn-default" href="#samedi3" role="button" style="background:rgba(255,255,255,.7)"><span class="glyphicon glyphicon-map-marker"></span> 16h-18h</a></p>
+<a class="btn btn-default" href="#samedi4" role="button" style="background:rgba(255,255,255,.7)"><span class="glyphicon glyphicon-map-marker"></span> 18h-20h</a></p>
+<a class="btn btn-default" href="#samedi5" role="button" style="background:rgba(255,255,255,.7)"><span class="glyphicon glyphicon-map-marker"></span> 20h-22h</a></p>
+
        <div id="vendredi14" > 
            <p class="text-center">Vendredi 14 décembre 2018</p>
         <style>
@@ -46,6 +56,7 @@ layout: default
         </style>
         <div class="timeline-v position-relative">
             <div style="position:absolute;top:0;bottom:0;left:0;right:50%;border-right:1px solid white"></div>
+            <div id="vendredi1" > 
 {% include programm_row.html
     hour="18h30"
     header='Les enfants de St Servais <br />Ouverture des festivités <span class="badge badge-warning float-right">Deambulation</span>'
@@ -66,8 +77,8 @@ layout: default
     img_url=img_url
     img_title='La Course du Vent, Cie Poum Tchak'
     body='<p>Tous publics</p>'
-%}
-
+%}</div>
+<div id="vendredi2" > 
 {% capture img_url %}{{site.baseurl}}/img/affiche fgobeurs.jpg{% endcapture %}
 {% include programm_row.html
     content_position="right"
@@ -77,7 +88,7 @@ layout: default
     img_title='Les gobeurs d’enclumes, Cie Qui s’Y Colle'
     body='<p>Tous publics</p>'
 %}
-   </div>
+   </div></div>
         </div>
         <br />
         <br />
@@ -91,7 +102,7 @@ layout: default
         </style>
         <div class="timeline-v position-relative">
             <div style="position:absolute;top:0;bottom:0;left:0;right:50%;border-right:1px solid white"></div>
-
+<div id="samedi1" > 
                         {% capture img_url %}{{site.baseurl}}/img/songe1.jpg{% endcapture %}
             {% include programm_row.html
     hour="11h30"
@@ -109,7 +120,8 @@ layout: default
     img_url=img_url
     img_title='Concert de harpe, Tiphaine Escarguel'
    
-%}
+%}</div>
+    <div id="samedi2" > 
             {% include programm_row.html
     hour="14h10"
     header='Gémeaux <br />Cie Les beaux jours <span class="badge badge-success float-right">Scène extérieure</span>'
@@ -123,8 +135,9 @@ layout: default
     header='Mickaël Guerrand <span class="badge badge-info float-right">Chapiteau Bar</span>'
     img_url=img_url
     body='<p>Chanson pour enfants</p>'
-%}
-            {% capture img_url %}{{site.baseurl}}/img/pom tchak.jpg{% endcapture %}
+%}</div>
+  <div id="samedi3" > 
+      {% capture img_url %}{{site.baseurl}}/img/pom tchak.jpg{% endcapture %}
             {% include programm_row.html
     hour="16h10"
     header='« La Course du Vent » <br />Cie Poum Tchak <span class="badge badge-primary float-right">Chapiteau</span>'
@@ -148,8 +161,8 @@ layout: default
     header='Concert de harpe <br /> Tiphaine Escarguel <span class="badge badge-info float-right">Eglise</span>'
     img_url=img_url
     img_title='Concert de harpe, Tiphaine Escarguel'
-%}
-
+%}</div>
+<div id="samedi4" > 
             {% capture img_url %}{{site.baseurl}}/img/bobby 2.jpg{% endcapture %}
             {% include programm_row.html
     content_position="right"
@@ -169,8 +182,8 @@ layout: default
     hour="19h30"
     header='Gémeaux <br />Cie Les beaux jours <span class="badge badge-primary float-right">Chapiteau</span>'
     body='<p>Création 2018<br />Première expérimentation publique</p>'
-%}
-                  
+%}</div>
+      <div id="samedi5" >             
  {% include programm_row.html
     hour="20h15"
     header='Scène ouverte <span class="badge badge-info float-right">Scène Bar</span>'
@@ -190,7 +203,7 @@ layout: default
     img_title='Les Vedette, Cie Une de Plus'
 %}       
             
-            
+            </div>
             
         </div>    </div>
 <a class="btn btn-default" href="#vendredi14" role="button" style="background:rgba(255,255,255,.7)"><span class="glyphicon glyphicon-map-marker"></span> Retour au vendredi</a></p>
