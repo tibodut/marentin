@@ -22,244 +22,8 @@ layout: default
         <a class="btn btn-default" href="#partenaires" role="button" style="background:rgba(255,255,255,.7)"><span class="glyphicon glyphicon-map-marker"></span> Les partenaires</a><br />
                     <a class="btn btn-default" href="#revue-de-presse" role="button" style="background:rgba(255,255,255,.7)"><span class="glyphicon glyphicon-map-marker"></span> La revue de presse</a></p>
             </div>
-        </div><div id="le-programme" class="bg-secondary padding-top padding-bottom text-white py-5">
-    <div class="container">
-        <h2>Le Programme</h2>
-   <div class="text-center">
-<a class="btn btn-default" href="#samedi2" role="button" style="background:rgba(255,255,255,.7)"><span class="glyphicon glyphicon-map-marker"></span> 14h-16h</a>
-<a class="btn btn-default" href="#samedi3" role="button" style="background:rgba(255,255,255,.7)"><span class="glyphicon glyphicon-map-marker"></span> 16h-18h</a>
-<a class="btn btn-default" href="#samedi4" role="button" style="background:rgba(255,255,255,.7)"><span class="glyphicon glyphicon-map-marker"></span> 18h-20h</a>
-    </div>
-        <br /><br /><br />
-               <p class="text-center">Samedi 19 décembre 2015</p>
-        <style>
-.timeline-v .popover>.arrow{top: calc(50% - .5rem)}
-        </style>
-        <div class="timeline-v position-relative">
-            <div style="position:absolute;top:0;bottom:0;left:0;right:50%;border-right:1px solid white"></div>
-            <div id="samedi2" > 
-{% include programm_row.html
-    hour="14h00"
-    header='Ouverture des festivités '
-    body='<p>Nous serons heureux de vous accueillir sur le site du festival dès 14h00.</p>'
-%}
-     {% capture img_url %}{{site.baseurl}}/img/artemisia.sm.jpg{% endcapture %}    
-            {% include programm_row.html
-              content_position="right"
-    hour="14h15"
-    header='Douce Voice <br />Artemisia Hood'
-    img_url=img_url
-    img_title='Douce Voice, Artemisia Hood'
-    body='<p>Chansons pour enfants et grands enfants !</p>'
-%}
-            
-{% capture img_url %}{{site.baseurl}}/img/pom tchak.jpg{% endcapture %}
-{% include programm_row.html
-      hour="14h35"
-    header='« Dluo » <br />Célia et Amélie '
-    img_url=img_url
-    img_title='Dluo, Célia et Amélie'
-    body='<p>Acrobatie</p>'
-%}
-{% capture img_url %}{{site.baseurl}}/img/pom tchak.jpg{% endcapture %}
-{% include programm_row.html
-              content_position="right"
-      hour="14h40"
-    header='« Ramassage polaire » <br />Françoise Pillet '
-    img_url=img_url
-    img_title='Ramassage Polaire, Françoise Pillet'
-    body='<p> Théâtre. <br /> Association « Thé’harteloire » créée par des jeunes de Brest. <br />Clarence, Sophie, Dany et Marceau à la mise en scène.</p>'
-%}
-
-{% capture img_url %}{{site.baseurl}}/img/pom tchak.jpg{% endcapture %}
-{% include programm_row.html
-      hour="15h10"
-    header='« Guitare/Voix et Duo Chansigné » '
-    img_url=img_url
-    img_title='Guitare, voix et duo chansigné'
-    body='<p> Avec Cécile, Laurène Pailler, Clément Hascoët </p>'
-%}
-
-{% capture img_url %}{{site.baseurl}}/img/pom tchak.jpg{% endcapture %}
-{% include programm_row.html
-                content_position="right"
-    hour="15h35"
-    header='« Fil de soie » <br />Lola Bardary et Caco '
-    img_url=img_url
-    img_title=' Fil de soie, Lola Bardary et Caco '
-    body='<p> Duo d’escrime traditionnel </p>'
-%}</div>
-<div id="samedi3" > 
-{% capture img_url %}{{site.baseurl}}/img/accordeur1.jpg{% endcapture %}
-{% include programm_row.html
-      hour="16h00"
-    header='« L’Accord’Heure » <br />Cie Les Cordes Associées '
-    img_url=img_url
-    img_title='L’Accord’Heure, Cie Les Cordes Associées'
-    body='<p> Théâtre physique tout public dès 2 ans ! </p>'
-%}
-
-{% capture img_url %}{{site.baseurl}}/img/pom tchak.jpg{% endcapture %}
-{% include programm_row.html
-              content_position="right"
-      hour="17h00"
-    header='« Aérao » <br />Lola Bardary '
-    img_url=img_url
-    img_title='Aérao, Lola Bardary'
-    body='<p>Cerceau aérien</p>'
-%}
-
-
-{% capture img_url %}{{site.baseurl}}/img/pom tchak.jpg{% endcapture %}
-{% include programm_row.html
-      hour="17h30"
-    header='« Le reste du temps ils font autre chose » <br />Cie Après La Pluie '
-    img_url=img_url
-    img_title=' Le reste du temps ils font autre chose, Cie Après La Pluie '
-    body='<p> Conception chorégraphique par Stéphanie Siou</p>'
-%}
-
-{% capture img_url %}{{site.baseurl}}/img/pom tchak.jpg{% endcapture %}
-{% include programm_row.html
-              content_position="right"
-      hour="17h50"
-    header='Dédale de Clown '
-    img_url=img_url
-    img_title='Dédale de clown'
-    body='<p>Numéro d’acrobatie de l’atelier de l’école de cirque Dédale de Clown</p>'
-%}
-</div>
-<div id="samedi4" > 
-{% capture img_url %}{{site.baseurl}}/img/pom tchak.jpg{% endcapture %}
-{% include programm_row.html
-      hour="18h00"
-    header='« Autour d’un banc » <br />Théo et Ivan '
-    img_url=img_url
-    img_title=' Autour d’un banc, Théo et Ivan '
-    body='<p>Duo de jonglage</p>'
-%}
-
-{% capture img_url %}{{site.baseurl}}/img/pom tchak.jpg{% endcapture %}
-{% include programm_row.html
-              content_position="right"
-      hour="18h30"
-    header=' Ludo Songs '
-    img_url=img_url
-    img_title='Dédale de clown'
-%}</div>
-            </div> </div>
-
- <div id="le-programme" class="bg-primary padding-top padding-bottom text-white py-5">
-    <div class="container">
-    <h2>Le Programme</h2>
-           <div class="col-sm-7">
-            <div class="row">
-                <div class="col-sm-2 col-xs-3 text-right">
-                    <p><span class="badge badge-default">14h</span></p>
-                </div>
-                <div class="col-sm-10 col-xs-9">
-                    <h4 class="list-group-item-heading">Accueil</h4>
-                    <p class="list-group-item-text">Nous serons heureux de vous accueillir sur le site du festival dès 14h.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-2 col-xs-3 text-right">
-                    <p><span class="badge badge-default">14h15</span></p>
-                </div>
-                <div class="col-sm-10 col-xs-9">
-                    <h4 class="list-group-item-heading">Artemisia Hood "douce voice"</h4>
-                    <p class="list-group-item-text">Chanson pour enfants et grands enfants!</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-2 col-xs-3 text-right">
-                    <p><span class="badge badge-default">14h35</span></p>
-                </div>
-                <div class="col-sm-10 col-xs-9">
-                    <h4 class="list-group-item-heading">"Dluo" avec célia et Amélie</h4>
-                    <p class="list-group-item-text">Acrobatie</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-2 col-xs-3 text-right">
-                    <p><span class="badge badge-default">14h40</span></p>
-                </div>
-                <div class="col-sm-10 col-xs-9">
-                    <h4 class="list-group-item-heading">« Ramassage Polaire » de Françoise Pillet</h4>
-                    <p class="list-group-item-text">Théâtre. Association " Thé'harteloire" crée par des jeunes de Brest. Clarence sophie dany et Marceau à la mise en scène.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-2 col-xs-3 text-right">
-                    <p><span class="badge badge-default">15h10</span></p>
-                </div>
-                <div class="col-sm-10 col-xs-9">
-                    <h4 class="list-group-item-heading">Cécile guitare/voix et « duo chansigné » par Laurène Pailler et Clément Hascoet</h4>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-2 col-xs-3 text-right">
-                    <p><span class="badge badge-default">15h35</span></p>
-                </div>
-                <div class="col-sm-10 col-xs-9">
-                    <h4 class="list-group-item-heading">« Fil de soie »</h4>
-                    <p class="list-group-item-text">Duo d’escrime traditionnel par Lola Bardary et Caco</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-2 col-xs-3 text-right">
-                    <p><span class="badge badge-default">16h</span></p>
-                </div>
-                <div class="col-sm-10 col-xs-9">
-                    <h4 class="list-group-item-heading">"L’Accord’Heure" par la Compagnie Les Cordes Associées</h4>
-                    <p class="list-group-item-text">Théâtre physique tout public dès 2 ans !</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-2 col-xs-3 text-right">
-                    <p><span class="badge badge-default">17h</span></p>
-                </div>
-                <div class="col-sm-10 col-xs-9">
-                    <h4 class="list-group-item-heading">« Aérao » par Lola Bardary</h4>
-                    <p class="list-group-item-text">Cerceau aérien</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-2 col-xs-3 text-right">
-                    <p><span class="badge badge-default">17h30</span></p>
-                </div>
-                <div class="col-sm-10 col-xs-9">
-                    <h4 class="list-group-item-heading">"Le reste du temps ils font autre chose"</h4>
-                    <p class="list-group-item-text">Laboratoire de la Cie après la pluie. Conception Chorégraphique Stephanie Siou.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-2 col-xs-3 text-right">
-                    <p><span class="badge badge-default">17h50</span></p>
-                </div>
-                <div class="col-sm-10 col-xs-9">
-                    <h4 class="list-group-item-heading">numéro d’acrobatie de l'atelier de l’école de cirque dédale de Clown</h4>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-2 col-xs-3 text-right">
-                    <p><span class="badge badge-default">18h</span></p>
-                </div>
-                <div class="col-sm-10 col-xs-9">
-                    <h4 class="list-group-item-heading">« autour d’un banc »</h4>
-                    <p class="list-group-item-text">Duo de jonglage/Clown avec Théo et Ivan</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-2 col-xs-3 text-right">
-                    <p><span class="badge badge-default">18h30</span></p>
-                </div>
-                <div class="col-sm-10 col-xs-9">
-                    <h4 class="list-group-item-heading">« ludo songs »</h4>
-                </div>
-            </div>
         </div>
-        <div class="col-sm-5">
+<div class="col-sm-5">
             <div id="marentin2015-carousel" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
@@ -388,6 +152,247 @@ layout: default
             </div>
          
         </div>
+
+
+
+<div id="le-programme" class="bg-secondary padding-top padding-bottom text-white py-5">
+    <div class="container">
+        <h2>Le Programme</h2>
+   <div class="text-center">
+<a class="btn btn-default" href="#samedi2" role="button" style="background:rgba(255,255,255,.7)"><span class="glyphicon glyphicon-map-marker"></span> 14h-16h</a>
+<a class="btn btn-default" href="#samedi3" role="button" style="background:rgba(255,255,255,.7)"><span class="glyphicon glyphicon-map-marker"></span> 16h-18h</a>
+<a class="btn btn-default" href="#samedi4" role="button" style="background:rgba(255,255,255,.7)"><span class="glyphicon glyphicon-map-marker"></span> 18h-20h</a>
+    </div>
+        <br /><br /><br />
+               <p class="text-center">Samedi 19 décembre 2015</p>
+        <style>
+.timeline-v .popover>.arrow{top: calc(50% - .5rem)}
+        </style>
+        <div class="timeline-v position-relative">
+            <div style="position:absolute;top:0;bottom:0;left:0;right:50%;border-right:1px solid white"></div>
+            <div id="samedi2" > 
+{% include programm_row.html
+    hour="14h00"
+    header='Ouverture des festivités '
+    body='<p>Nous serons heureux de vous accueillir sur le site du festival dès 14h00.</p>'
+%}
+     {% capture img_url %}{{site.baseurl}}/img/artemisia.sm.jpg{% endcapture %}    
+            {% include programm_row.html
+              content_position="right"
+    hour="14h15"
+    header='Douce Voice <br />Artemisia Hood'
+    img_url=img_url
+    img_title='Douce Voice, Artemisia Hood'
+    body='<p>Chansons pour enfants et grands enfants !</p>'
+%}
+            
+{% capture img_url %}{{site.baseurl}}/img/pom tchak.jpg{% endcapture %}
+{% include programm_row.html
+      hour="14h35"
+    header='« Dluo » <br />Célia et Amélie '
+    img_url=img_url
+    img_title='Dluo, Célia et Amélie'
+    body='<p>Acrobatie</p>'
+%}
+{% capture img_url %}{{site.baseurl}}/img/pom tchak.jpg{% endcapture %}
+{% include programm_row.html
+              content_position="right"
+      hour="14h40"
+    header='« Ramassage polaire » <br />Françoise Pillet '
+    img_url=img_url
+    img_title='Ramassage Polaire, Françoise Pillet'
+    body='<p> Théâtre. <br /> Association « Thé’harteloire » créée par des jeunes de Brest. <br />Clarence, Sophie, Dany et Marceau à la mise en scène.</p>'
+%}
+
+{% capture img_url %}{{site.baseurl}}/img/pom tchak.jpg{% endcapture %}
+{% include programm_row.html
+      hour="15h10"
+    header='« Guitare/Voix et Duo Chansigné » '
+    img_url=img_url
+    img_title='Guitare, voix et duo chansigné'
+    body='<p> Avec Cécile, Laurène Pailler, Clément Hascoët </p>'
+%}
+
+{% capture img_url %}{{site.baseurl}}/img/pom tchak.jpg{% endcapture %}
+{% include programm_row.html
+                content_position="right"
+    hour="15h35"
+    header='« Fil de soie » <br />Lola Bardary et Caco '
+    img_url=img_url
+    img_title=' Fil de soie, Lola Bardary et Caco '
+    body='<p> Duo d’escrime traditionnel </p>'
+%}</div>
+<div id="samedi3" > 
+{% capture img_url %}{{site.baseurl}}/img/accordeur1.jpg{% endcapture %}
+{% include programm_row.html
+      hour="16h00"
+    header='« L’Accord’Heure » <br />Cie Les Cordes Associées '
+    img_url=img_url
+    img_title='L’Accord’Heure, Cie Les Cordes Associées'
+    body='<p> Théâtre physique tout public dès 2 ans ! </p>'
+%}
+
+{% capture img_url %}{{site.baseurl}}/img/pom tchak.jpg{% endcapture %}
+{% include programm_row.html
+              content_position="right"
+      hour="17h00"
+    header='« Aérao » <br />Lola Bardary '
+    img_url=img_url
+    img_title='Aérao, Lola Bardary'
+    body='<p>Cerceau aérien</p>'
+%}
+
+
+{% capture img_url %}{{site.baseurl}}/img/pom tchak.jpg{% endcapture %}
+{% include programm_row.html
+      hour="17h30"
+    header='« Le reste du temps ils font autre chose » <br />Cie Après La Pluie '
+    img_url=img_url
+    img_title=' Le reste du temps ils font autre chose, Cie Après La Pluie '
+    body='<p> Conception chorégraphique par Stéphanie Siou</p>'
+%}
+
+{% capture img_url %}{{site.baseurl}}/img/pom tchak.jpg{% endcapture %}
+{% include programm_row.html
+              content_position="right"
+      hour="17h50"
+    header='Dédale de Clown '
+    img_url=img_url
+    img_title='Dédale de clown'
+    body='<p>Numéro d’acrobatie de l’atelier de l’école de cirque Dédale de Clown</p>'
+%}
+</div>
+<div id="samedi4" > 
+{% capture img_url %}{{site.baseurl}}/img/pom tchak.jpg{% endcapture %}
+{% include programm_row.html
+      hour="18h00"
+    header='« Autour d’un banc » <br />Théo et Ivan '
+    img_url=img_url
+    img_title=' Autour d’un banc, Théo et Ivan '
+    body='<p>Duo de jonglage</p>'
+%}
+
+{% capture img_url %}{{site.baseurl}}/img/pom tchak.jpg{% endcapture %}
+{% include programm_row.html
+              content_position="right"
+      hour="18h30"
+    header=' Ludo Songs '
+    img_url=img_url
+    img_title='Dédale de clown'
+%}</div>
+            </div> 
+
+ <div id="le-programme" class="bg-primary padding-top padding-bottom text-white py-5">
+    <div class="container">
+    <h2>Le Programme</h2>
+           <div class="col-sm-7">
+            <div class="row">
+                <div class="col-sm-2 col-xs-3 text-right">
+                    <p><span class="badge badge-default">14h</span></p>
+                </div>
+                <div class="col-sm-10 col-xs-9">
+                    <h4 class="list-group-item-heading">Accueil</h4>
+                    <p class="list-group-item-text">Nous serons heureux de vous accueillir sur le site du festival dès 14h.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2 col-xs-3 text-right">
+                    <p><span class="badge badge-default">14h15</span></p>
+                </div>
+                <div class="col-sm-10 col-xs-9">
+                    <h4 class="list-group-item-heading">Artemisia Hood "douce voice"</h4>
+                    <p class="list-group-item-text">Chanson pour enfants et grands enfants!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2 col-xs-3 text-right">
+                    <p><span class="badge badge-default">14h35</span></p>
+                </div>
+                <div class="col-sm-10 col-xs-9">
+                    <h4 class="list-group-item-heading">"Dluo" avec célia et Amélie</h4>
+                    <p class="list-group-item-text">Acrobatie</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2 col-xs-3 text-right">
+                    <p><span class="badge badge-default">14h40</span></p>
+                </div>
+                <div class="col-sm-10 col-xs-9">
+                    <h4 class="list-group-item-heading">« Ramassage Polaire » de Françoise Pillet</h4>
+                    <p class="list-group-item-text">Théâtre. Association " Thé'harteloire" crée par des jeunes de Brest. Clarence sophie dany et Marceau à la mise en scène.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2 col-xs-3 text-right">
+                    <p><span class="badge badge-default">15h10</span></p>
+                </div>
+                <div class="col-sm-10 col-xs-9">
+                    <h4 class="list-group-item-heading">Cécile guitare/voix et « duo chansigné » par Laurène Pailler et Clément Hascoet</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2 col-xs-3 text-right">
+                    <p><span class="badge badge-default">15h35</span></p>
+                </div>
+                <div class="col-sm-10 col-xs-9">
+                    <h4 class="list-group-item-heading">« Fil de soie »</h4>
+                    <p class="list-group-item-text">Duo d’escrime traditionnel par Lola Bardary et Caco</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2 col-xs-3 text-right">
+                    <p><span class="badge badge-default">16h</span></p>
+                </div>
+                <div class="col-sm-10 col-xs-9">
+                    <h4 class="list-group-item-heading">"L’Accord’Heure" par la Compagnie Les Cordes Associées</h4>
+                    <p class="list-group-item-text">Théâtre physique tout public dès 2 ans !</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2 col-xs-3 text-right">
+                    <p><span class="badge badge-default">17h</span></p>
+                </div>
+                <div class="col-sm-10 col-xs-9">
+                    <h4 class="list-group-item-heading">« Aérao » par Lola Bardary</h4>
+                    <p class="list-group-item-text">Cerceau aérien</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2 col-xs-3 text-right">
+                    <p><span class="badge badge-default">17h30</span></p>
+                </div>
+                <div class="col-sm-10 col-xs-9">
+                    <h4 class="list-group-item-heading">"Le reste du temps ils font autre chose"</h4>
+                    <p class="list-group-item-text">Laboratoire de la Cie après la pluie. Conception Chorégraphique Stephanie Siou.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2 col-xs-3 text-right">
+                    <p><span class="badge badge-default">17h50</span></p>
+                </div>
+                <div class="col-sm-10 col-xs-9">
+                    <h4 class="list-group-item-heading">numéro d’acrobatie de l'atelier de l’école de cirque dédale de Clown</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2 col-xs-3 text-right">
+                    <p><span class="badge badge-default">18h</span></p>
+                </div>
+                <div class="col-sm-10 col-xs-9">
+                    <h4 class="list-group-item-heading">« autour d’un banc »</h4>
+                    <p class="list-group-item-text">Duo de jonglage/Clown avec Théo et Ivan</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2 col-xs-3 text-right">
+                    <p><span class="badge badge-default">18h30</span></p>
+                </div>
+                <div class="col-sm-10 col-xs-9">
+                    <h4 class="list-group-item-heading">« ludo songs »</h4>
+                </div>
+            </div>
+        </div>
+        
     </div>
 </div>
      
