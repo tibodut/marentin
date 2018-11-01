@@ -268,36 +268,7 @@ layout: default
     </div>
 </div>
 
-       <div id="le-lieu" class="bg-white padding-top padding-bottom text-ptimary py-5">
-              <div class="container">
-      <h2>Le Lieu</h2>
-    <address><strong>Bourg de Saint-Servais</strong><br />
-        29400 Saint-servais</address>
-</div>
-<div id="le-lieu-map" style="height:400px"></div>
-<script>
-function initMap() {
-    var map = new google.maps.Map(document.getElementById('le-lieu-map'), {
-        center: {lat: 48.5115, lng: -4.155},
-        scrollwheel: false,
-        zoom: 18,
-        mapTypeId: google.maps.MapTypeId.SATELLITE
-    });
-    var src = 'http://www.google.com/maps/d/kml?mid=1jZXzBItb9H5SriTtwt0bAidic50';
-    var kmlLayer = new google.maps.KmlLayer(src, {
-        preserveViewport: true,
-        map: map
-    });
-}
-</script>
-
-
-
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7ER8y8I64T8nIEYWBJcFOEGHd5Fw-Y84&callback=initMap" async defer></script>
- </div>
- </div>
-
-<div id="partenaires" class="bg-secondary padding-top padding-bottom text-white py-5">
+<div id="partenaires" class="bg-white padding-top padding-bottom text-primary py-5">
     <div class="container">
         <h3>Les partenaires</h3>
   <br />
@@ -338,6 +309,38 @@ function initMap() {
         <br />
         <br /> 
          </div> 
+
+
+       <div id="le-lieu" class="bg-secondary padding-top padding-bottom text-white py-5">
+              <div class="container">
+      <h2>Le Lieu</h2>
+    <address><strong>Bourg de Saint-Servais</strong><br />
+        29400 Saint-servais</address>
+</div>
+<div id="le-lieu-map" style="height:400px"></div>
+<script>
+function initMap() {
+    var map = new google.maps.Map(document.getElementById('le-lieu-map'), {
+        center: {lat: 48.5115, lng: -4.155},
+        scrollwheel: false,
+        zoom: 18,
+        mapTypeId: google.maps.MapTypeId.SATELLITE
+    });
+    var src = 'http://www.google.com/maps/d/kml?mid=1jZXzBItb9H5SriTtwt0bAidic50';
+    var kmlLayer = new google.maps.KmlLayer(src, {
+        preserveViewport: true,
+        map: map
+    });
+}
+</script>
+
+
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7ER8y8I64T8nIEYWBJcFOEGHd5Fw-Y84&callback=initMap" async defer></script>
+ </div>
+ </div>
+
+
     
     
 <div id="revue-de-presse" class="bg-white padding-top padding-bottom text-primary py-5">
