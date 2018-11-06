@@ -306,21 +306,52 @@ function initMap() {
 </div>
 
 
-<div id="revue-de-presse" class="bg-white padding-top padding-bottom text-primary py-5">
+ <div id="revue-de-presse" class="bg-white padding-top padding-bottom text-primary py-5">
     <div class="container">    
-<h4>La revue de presse</h4> 
-      <br />
-        <br /> 
-        <div class="row padding-top text-center">
+<h4>La revue de presse</h4>
+<br / >
+     <div id="RP2018" class="carousel slide col-sm-12" data-ride="carousel">
+      
+      <ol class="carousel-indicators">
+       <li data-target="#RP2018" data-slide-to="0" class="active"></li>
+    <li data-target="#RP2018" data-slide-to="1"></li>
+     <li data-target="#RP2018" data-slide-to="2"></li>
+  
+  
 
-            <div class="col-sm-6">
-    <img src="{{site.baseurl}}/img/RP-2018-1.JPG" alt="Télégramme" height="300px"/>
-<p>Télégramme - 6 septembre 2018</p></div> 
-           
-            <div class="col-sm-6">
-    <img src="{{site.baseurl}}/img/RP-2018-2.JPG" alt="Ouest France" height="400px"/>
-<p>Ouest France - 7 septembre 2018</p></div> 
-    </div> 
+  </ol>
+
+  <div class="container text-center carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block" src="{{site.baseurl}}/img/RP-2018-1.JPG">
+   <p class="position-relative z-index-1000 text-left"> Télégramme - 6 septembre 2018</p>
+
+    </div>
+    <div class="carousel-item">
+      <img class="d-block" src="{{site.baseurl}}/img/RP-2018-2.JPG">
+           <p class="position-relative z-index-1000 text-left"> Ouest France - 7 septembre 2018</p>
+
+    </div>
+    <div class="carousel-item">
+      <img class="d-block" src="{{site.baseurl}}/img/RP-2018-3.JPG">
+           <p class="position-relative z-index-1000 text-left"> Ouest France - 2 novembre 2018</p>
+
+    </div>
+    
+</div>
+        <a class="carousel-control-prev" href="#RP2018" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" ></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#RP2018" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" ></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+        
+        
+
+
  <a class="btn btn-primary" href="#haut-de-page" role="button"><span class="fa fa-sort-up"></span> Haut de page</a></p>
 
  </div>  
