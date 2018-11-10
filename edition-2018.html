@@ -60,10 +60,12 @@ layout: default
             <div style="position:absolute;top:0;bottom:0;left:0;right:50%;border-right:1px solid white"></div>
             <div id="vendredi1" > 
              
+   {% capture img_url %}{{site.baseurl}}/img/logos/logo-APE.png{% endcapture %}
    {% include programm_row.html
    content_position="right"
     hour="17h30"
     header='Marché de Noël de l’APE'
+    img_url=img_url
     body='<p>L’Association des Parents d’Élèves de Saint Servais organise un marché de Noël</p>'
 %}
                 
