@@ -208,9 +208,12 @@ layout: default
 <a class="btn btn-info" href="http://compagniepoc.com/compagnie/" role="button">Site internet</a> </p>'
 
 %}
+    
+     {% capture img_url %}{{site.baseurl}}/img/7786650820_disque-vinyle.jpg{% endcapture %}     
  {% include programm_row.html
     hour="19h00"
     header='DJ Younity <br /> <span class="badge badge-info float-right">Chapiteau Bar</span>'
+    img_url=img_url
     body='<p>Session Mix</p>'
 %}
 
@@ -228,11 +231,12 @@ layout: default
     body='<p>Pour vous inscrire<br />Contactez la <a href="mailto:lescordesassociees@gmail.com" traget="_blank"> Cie Les Cordes Associées </a> </p>'
 
 %}
-
+     {% capture img_url %}{{site.baseurl}}/img/7786650820_disque-vinyle.jpg{% endcapture %}     
             {% include programm_row.html
     content_position="right"
     hour="20h30"
     header='DJ Younity <br /> <span class="badge badge-info float-right">Chapiteau Bar</span>'
+          img_url=img_url
     body='<p>Session Mix</p>'
 %}
                  {% capture img_url %}{{site.baseurl}}/img/vedette1.jpg{% endcapture %}
