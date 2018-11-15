@@ -12,7 +12,8 @@
 {% endif %}
     {% include favicons.html %}
     {% include metaheader.html %}
-    
+    #back-to-top { position: fixed; bottom: 18px; right: 18px;}
+
 
 
     <link rel="stylesheet" href="{{ '/css/bootstrap.css' | relative_url }}">
@@ -22,8 +23,6 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 </head>
 <body>    
-<a id="back-to-top" class="btn btn-primary" href="#haut-de-page" role="button"><span class="fa fa-chevron-circle-up"></span> Haut de page</a>
-#back-to-top { position: fixed; bottom: 18px; right: 18px;}
     {{ content }}  
 {% include footer.html %}
     
