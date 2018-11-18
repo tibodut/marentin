@@ -7,6 +7,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             {%include menu-li.html text='Présentation' href='/' _title='Festival Le Marentin'%}
+            {%include menu-li.html text='Édition 2018' href='/edition-2018' _title='Édition 2018'%}
             <li class="nav-item dropdown{%if ['/edition-2015', '/edition-2016'] contains page.url%} active{%endif%}">
                 <a class="nav-link dropdown-toggle" href="#" id="previous-editions" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Les éditions précédentes</a>
                 <div class="dropdown-menu" aria-labelledby="previous-editions">
@@ -14,7 +15,6 @@
                     <a class="dropdown-item" href="{{'/edition-2016'|relative_url}}">Édition 2016</a>
                 </div>
             </li>
-            {%include menu-li.html text='Édition 2018' href='/edition-2018' _title='Édition 2018'%}
             {%include menu-li.html text='Soutenir le projet' href='/soutien'%}
         </ul>
         <ul class="navbar-nav">

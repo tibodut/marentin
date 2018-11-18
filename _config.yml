@@ -29,12 +29,17 @@ exclude:
   - .bundle
   - .svn
 
-mini_magick:
-  sm:
-    source: img/original
-    destination: img/sm
-    resize: "100"
-  md:
-    source: img/original
-    destination: img/md
-    resize: "600"
+# imagemagick:
+# enabled: true
+# widths:
+#   - 512
+#   - 128
+#   - 0
+# input_directories:
+#   - _img_convert
+# input_formats:
+#   - ".jpg"
+#   - ".jpeg"
+# output_formats:
+#   jpg: "-quality 85% -define jpeg:dct-method=float -strip -interlace Plane"
+# #    webp: "-quality 100%"
