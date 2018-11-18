@@ -321,28 +321,9 @@ layout: default
       <h4>Le Lieu</h4>
     <address><strong>Bourg de Saint-Servais</strong><br />
         29400 Saint-servais</address>
-
-<div id="le-lieu-map" class="text-primary" style="height:400px"></div>
-<script>
-function initMap() {
-    var map = new google.maps.Map(document.getElementById('le-lieu-map'), {
-        center: {lat: 48.5115, lng: -4.155},
-        scrollwheel: false,
-        zoom: 18,
-        mapTypeId: google.maps.MapTypeId.SATELLITE
-    });
-    var src = 'http://www.google.com/maps/d/kml?mid=1jZXzBItb9H5SriTtwt0bAidic50';
-    var kmlLayer = new google.maps.KmlLayer(src, {
-        preserveViewport: true,
-        map: map
-    });
-}
-</script>
-
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7ER8y8I64T8nIEYWBJcFOEGHd5Fw-Y84&callback=initMap" async defer></script>
-<br / >
-                  <img src="{{site.baseurl}}/img/visuel plan marentin 2016.jpg" alt="Visuel plan Marentin 2016" height="450px"/>
-                  <br / >
+<br />
+<img style="center" src="{{site.baseurl}}/img/visuel plan marentin 2016.jpg" alt="Visuel plan Marentin 2016" height="450px"/>
+                  <br />
                   
 
 </div>
