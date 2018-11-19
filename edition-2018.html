@@ -2,87 +2,87 @@
 layout: default
 ---
 
-<div class="parallax-container- parallax-full-height" id="haut-de-page" data-parallax data-pos-x="center" data-pos-y="40%" data-src="img/bandeau-2018.jpg" style="background-image: url(img/bandeau-2018.jpg); background-position: center 40%; background-size: cover">
-    <div class="container d-flex flex-column align-items-end h-100">
-
-{% include menu.html %}
-
-                <h1 class="mt-auto mb-3 p-3 bg-primary text-light">Le Marentin</h1>
-                <p class="mb-auto p-2 bg-light text-primary">Festival d'Art de rue</p>
-</div>
-
+<div class="parallax-container-no parallax-full-height-no" id="haut-de-page" data-parallax-no data-pos-x-no="center" data-pos-y-no="40%" data-src-no="img/bandeau-2018.jpg" style="background-image: url(img/bandeau-2018.jpg); background-position: center 40%; background-size: cover">
+    <div class="container">
+        {% include menu.html %}
+        <div class="row">
+            <div class="col-sm-8">
+                <div class="d-flex flex-column align-items-end m-3">
+                    <h1 class="mt-auto mb-3 p-3 bg-primary text-light">Le Marentin</h1>
+                    <p class="mb-auto p-2 bg-light text-primary">Festival d'Art de rue</p>
+                </div>
+            </div>
             <div class="col-sm-4">
                 <div class="text-primary text-center" style="width: 100px;height: 100px;border-radius: 100%;font-weight: bold;border: 10px solid;border-color: primary; margin-top:50px;margin-left:50px;padding-top: 20px;line-height: 20px;background-color: rgba(255,255,255,.7);">3<sup>ème</sup><br>édition</div>
-
-  </div>
-
-
+            </div>
+        </div>
         <div class="row">
-
-<div class="col-sm-8 text-right">
+            <div class="col-sm-8 text-right">
                 <p style="line-height: 2em;">
                     <a class="btn btn-info" href="{{site.baseurl}}" role="button"><span class="fa fa-info-circle"></span> Le festival</a><br />
                     <a class="btn btn-primary" href="#le-programme" role="button"><span class="fa fa-bullhorn"></span> Le programme</a><br />
                     <a class="btn btn-default" href="{{site.baseurl}}/img/affiche-2018_V3.jpg" target="_blank" role="button" style="background:rgba(255,255,255,.7)"><span class="fa fa-archive"></span> L'affiche</a><br />
-                    <a class="btn btn-default" href="#le-lieu" role="button" style="background:rgba(255,255,255,.7)"><span class="fa fa-map-marker"></span> Le lieu</a></p>
+                    <a class="btn btn-default" href="#le-lieu" role="button" style="background:rgba(255,255,255,.7)"><span class="fa fa-map-marker"></span> Le lieu</a>
+                </p>
             </div>
             <div class="col-sm-4">
                 <p style="line-height: 2em;">
                     <a class="btn btn-default" href="https://www.facebook.com/events/361946424138220/" target="_blank" role="button" style="background:rgba(255,255,255,.7)"><span class="fa fa-facebook-official" aria-hidden="true"></span> Donnez votre avis <span class="fa fa-hashtag" aria-hidden="true"></span></a><br />
                     <a class="btn btn-default" href="{{site.baseurl}}/edition-2016" target="_blank" role="button" style="background:rgba(255,255,255,.7)"> Revivez la 2<sup>ème</sup> édition <span class="fa fa-history" aria-hidden="true"></span></a><br />
                     <a class="btn btn-default" href="#partenaires" role="button" style="background:rgba(255,255,255,.7)"> Les partenaires <span class="fa fa-users"></span></a><br />
-                    <a class="btn btn-default" href="#revue-de-presse" role="button" style="background:rgba(255,255,255,.7)"> La revue de presse <span class="fa fa-film"></span></a></p>
-                      </div>
-</div> </div>
-        <a id="back-to-top" class="btn btn-primary" href="#haut-de-page" role="button"><span class="fa fa-chevron-circle-up"></span> Haut de page</a>
-
-     <div class="bg-white py-5">
-           <br /></div>
-<div id="le-programme" class="bg-secondary padding-top padding-bottom text-white py-5">
-    <div class="container">
-
-        <h4>Le Programme</h4>
-   <div class="text-center">
-        <p>Vendredi</p>
-<a class="btn btn-default" href="#vendredi1" role="button" style="background:rgba(255,255,255,.7)"> 18h-20h</a>
-<a class="btn btn-default" href="#vendredi2" role="button" style="background:rgba(255,255,255,.7)"> 20h-22h</a></p>
-        <p>Samedi</p>
-<a class="btn btn-default" href="#samedi1" role="button" style="background:rgba(255,255,255,.7)"> 11h-14h</a>
-<a class="btn btn-default" href="#samedi2" role="button" style="background:rgba(255,255,255,.7)"> 14h-16h</a>
-<a class="btn btn-default" href="#samedi3" role="button" style="background:rgba(255,255,255,.7)"> 16h-18h</a>
-<a class="btn btn-default" href="#samedi4" role="button" style="background:rgba(255,255,255,.7)"> 18h-20h</a>
-<a class="btn btn-default" href="#samedi5" role="button" style="background:rgba(255,255,255,.7)"> 20h-22h</a></p>
+                    <a class="btn btn-default" href="#revue-de-presse" role="button" style="background:rgba(255,255,255,.7)"> La revue de presse <span class="fa fa-film"></span></a>
+                </p>
+            </div>
+        </div>
     </div>
-        <br /><br /><br />
-               <h5 class="text-center">Vendredi 14 décembre 2018</h5>
-<br />
-        <style>
-.timeline-v .popover>.arrow{top: calc(50% - .5rem)}
-        </style>
-        <div class="timeline-v position-relative">
-            <div style="position:absolute;top:0;bottom:0;left:0;right:50%;border-right:1px solid white"></div>
-            <div id="vendredi1" >
+</div>
 
-  {% capture img_url %}{{site.baseurl}}/img/logos/logo-APE.png{% endcapture %}
-   {% include programm_row.html
-   content_position="right"
+    <a id="back-to-top" class="btn btn-primary" href="#haut-de-page" role="button"><span class="fa fa-chevron-circle-up"></span> Haut de page</a>
+
+    <div class="bg-white py-5">
+        <br />
+    </div>
+    <div id="le-programme" class="bg-secondary padding-top padding-bottom text-white py-5">
+        <div class="container">
+            <h4>Le Programme</h4>
+            <div class="text-center">
+                <p>Vendredi</p>
+                <p><a class="btn btn-default" href="#vendredi1" role="button" style="background:rgba(255,255,255,.7)"> 18h-20h</a>
+                    <a class="btn btn-default" href="#vendredi2" role="button" style="background:rgba(255,255,255,.7)"> 20h-22h</a></p>
+                <p>Samedi</p>
+                <p><a class="btn btn-default" href="#samedi1" role="button" style="background:rgba(255,255,255,.7)"> 11h-14h</a>
+                    <a class="btn btn-default" href="#samedi2" role="button" style="background:rgba(255,255,255,.7)"> 14h-16h</a>
+                    <a class="btn btn-default" href="#samedi3" role="button" style="background:rgba(255,255,255,.7)"> 16h-18h</a>
+                    <a class="btn btn-default" href="#samedi4" role="button" style="background:rgba(255,255,255,.7)"> 18h-20h</a>
+                    <a class="btn btn-default" href="#samedi5" role="button" style="background:rgba(255,255,255,.7)"> 20h-22h</a></p>
+            </div>
+            <br />
+            <br />
+            <br />
+            <h5 class="text-center">Vendredi 14 décembre 2018</h5>
+            <br />
+            <div class="timeline-v position-relative">
+                <div style="position:absolute;top:0;bottom:0;left:0;right:50%;border-right:1px solid white"></div>
+                <div id="vendredi1" >
+{% capture img_url %}{{site.baseurl}}/img/logos/logo-APE.png{% endcapture %}
+{% include programm_row.html
+    content_position="right"
     hour="17h30"
     header_title='Marché de Noël de l’APE'
     img_url=img_url
     body='<p>Le marché de Noël de l’Association des Parents d’Élèves de Saint Servais ouvrira ses portes de 17h30 à 21h30 sous le chapiteau du festival.<br /> De nombreux créateurs et artisans ont répondu présents à ce rendez-vous hivernal. Nous pouvons vous promettre un moment chaleureux et convivial, autour de ces stands d’artisanat local. Une restauration et une buvette seront à proximité du marché.<br /> <br />
-<a class="btn btn-info" href="http://www.facebook.com/APE-école-de-Saint-Servais-1235766026479687/" role="button">Page facebook de l’APE</a>
+<a class="btn btn-info" href="http://www.facebook.com/APE-école-de-Saint-Servais-1235766026479687/" role="button">Page facebook de l’APE</a></p>
 <p> Artisans présents : </p>
-<a class="btn btn-warning" href=" "  role="button"> Hakawerk</a>
-<a class="btn btn-warning" href=" "  role="button"> Julie créations</a>
-<a class="btn btn-warning" href=" http://www.cave-de-landi.fr/accueil.html "  role="button"> Cave de landi</a>
-<a class="btn btn-warning" href=" https://www.oikaoika.fr/ "  role="button"> Oika oika</a>
-<a class="btn btn-warning" href="      "  role="button"> Gwialenn ar Vro</a>
-<a class="btn btn-warning" href=" http://www.breizh-douceurs.fr/ "  role="button"> Breizh douceurs</a>
-<a class="btn btn-warning" href=" https://www.facebook.com/jaunecitronetcie/"  role="button"> Jaune citrons et compagnie</a>
-<a class="btn btn-warning" href=" http://www.mercerie-oplaisirdescoutures.fr/ "  role="button"> O plaisir des coutures</a>
-<a class="btn btn-warning" href=" https://www.kiwietcompagnie.fr/"  role="button"> Kiwi et compagnie</a>
+<p><a class="btn btn-warning" href="" role="button">Hakawerk</a>
+<a class="btn btn-warning" href="" role="button">Julie créations</a>
+<a class="btn btn-warning" href="http://www.cave-de-landi.fr/accueil.html" role="button">Cave de landi</a>
+<a class="btn btn-warning" href="https://www.oikaoika.fr/" role="button">Oika oika</a>
+<a class="btn btn-warning" href="" role="button">Gwialenn ar Vro</a>
+<a class="btn btn-warning" href="http://www.breizh-douceurs.fr/" role="button">Breizh douceurs</a>
+<a class="btn btn-warning" href="https://www.facebook.com/jaunecitronetcie/" role="button">Jaune citrons et compagnie</a>
+<a class="btn btn-warning" href="http://www.mercerie-oplaisirdescoutures.fr/" role="button">O plaisir des coutures</a>
+<a class="btn btn-warning" href="https://www.kiwietcompagnie.fr/"  role="button">Kiwi et compagnie</a>
 </p>'
-
 %}
 
 
@@ -116,8 +116,9 @@ layout: default
                 M. de Montgolfier, personnage aussi fou qu’attachant, se laisse convaincre par 3 écoliers de les emmener à bord de son superbe ballon à la découverte du monde.<br /> Au son des guitares, accordéon et contrebasse, nous voyagerons ainsi entre terre, ciel et mer en couleurs et en chansons. Lâchez du lest, la montgolfière va s’envoler.<br /> <br />
 <a class="btn btn-info" href="https://www.facebook.com/poumtchak0/" role="button">Page facebook</a> </p>'
 
-%}</div>
-<div id="vendredi2" >
+%}
+                </div>
+                <div id="vendredi2" >
 {% capture img_url %}{{site.baseurl}}/img/affiche fgobeurs.jpg{% endcapture %}
 {% include programm_row.html
     content_position="right"
@@ -133,22 +134,16 @@ layout: default
 <a class="btn btn-info" href="http://quisycolle.wixsite.com/quisycolle/les-gobeurs-d-enclumes-1" role="button">Site internet</a> </p>'
 
 %}
-   </div>
-        </div>
-        <br />
-
-        <br />
-        <br />
-         <div class="container">
-
-       <h5 class="text-center">Samedi 15 décembre 2018</h5>
-             <br />
-        <style>
-.timeline-v .popover>.arrow{top: calc(50% - .5rem)}
-        </style>
-        <div class="timeline-v position-relative">
-            <div style="position:absolute;top:0;bottom:0;left:0;right:50%;border-right:1px solid white"></div>
-<div id="samedi1" >
+                </div>
+            </div>
+            <br />
+            <br />
+            <br />
+            <h5 class="text-center">Samedi 15 décembre 2018</h5>
+            <br />
+            <div class="timeline-v position-relative">
+                <div style="position:absolute;top:0;bottom:0;left:0;right:50%;border-right:1px solid white"></div>
+                <div id="samedi1" >
                         {% capture img_url %}{{site.baseurl}}/img/songe1.jpg{% endcapture %}
             {% include programm_row.html
     hour="11h30"
@@ -177,9 +172,9 @@ layout: default
     body='<p><strong>Concert</strong><br /> Dès l’age de 4 ans, elle a décidé de faire de la harpe sa passion puis plus tard son métier. Elle enseigne depuis plus de 10 ans la harpe celtique en région brestoise et se produit avec différents groupes de musique celtique, ou rock à la harpe électrique. <br /> Artiste curieuse de toutes les influences musicales, elle est très attachée aux personnes et aux liens qui l’inspirent. <br /> Nous avons le privilège de l’accueillir dans notre chapiteau bar dès 12h30, elle proposera un temps d’échange avec les enfants pour découvrir la harpe. Ensuite, nous vous donnons rendez-vous dans l’église de Saint Servais à partir de 17h45. Il s’agit pour nous d’une belle occasion de faire découvrir aux festivaliers le patrimoine de Saint Servais.<br /> <br />
 <a class="btn btn-info" href=" http://tiphaine-escarguel.fr/" role="button">Site internet</a> </p>'
 
-%}</div>
-    <div id="samedi2" >
-
+%}
+                </div>
+                <div id="samedi2" >
         {% capture img_url %}{{site.baseurl}}/img/gemeaux.png{% endcapture %}
             {% include programm_row.html
     hour="14h10"
@@ -203,8 +198,9 @@ layout: default
         body='<p><strong>Concert</strong><br /> Originaire de Brest, Mickaël Guerrand sillonne la France, depuis une quinzaine d’années. Ses chansons rock en bandoulière, il forge sa plume et son identité de café-concerts en festivals, s’illustrant notamment en première partie de Tété, Eiffel, La Grande Sophie...<br /> Des ingrédients savamment dosés, liés par une voix étonnante, accrocheuse, servie sur un groove authentique avec poésie et simplicité. Longueur d’Ondes.  <br /><br />
 <a class="btn btn-info" href=" http://mickaelguerrand.com/" role="button">Site internet</a> </p>'
 
-%}</div>
-  <div id="samedi3" >
+%}
+                </div>
+                <div id="samedi3" >
       {% capture img_url %}{{site.baseurl}}/img/pom tchak.jpg{% endcapture %}
             {% include programm_row.html
     hour="16h10"
@@ -245,8 +241,9 @@ layout: default
     img_title='Concert de harpe, Tiphaine Escarguel'
       body='<p><strong>Concert</strong><br /> Dès l’age de 4 ans, elle a décidé de faire de la harpe sa passion puis plus tard son métier. Elle enseigne depuis plus de 10 ans la harpe celtique en région brestoise et se produit avec différents groupes de musique celtique, ou rock à la harpe électrique. <br /> Artiste curieuse de toutes les influences musicales, elle est très attachée aux personnes et aux liens qui l’inspirent. <br /> Nous avons le privilège de l’accueillir dans notre chapiteau bar dès 12h30, elle proposera un temps d’échange avec les enfants pour découvrir la harpe. Ensuite, nous vous donnons rendez-vous dans l’église de Saint Servais à partir de 17h45. Il s’agit pour nous d’une belle occasion de faire découvrir aux festivaliers le patrimoine de Saint Servais.<br /> <br />
 <a class="btn btn-info" href=" http://tiphaine-escarguel.fr/" role="button">Site internet</a> </p>'
-%}</div>
-<div id="samedi4" >
+%}
+                </div>
+                <div id="samedi4" >
             {% capture img_url %}{{site.baseurl}}/img/bobby 2.jpg{% endcapture %}
             {% include programm_row.html
     content_position="right"
@@ -282,9 +279,9 @@ layout: default
 	header_badge_class='primary'
     img_url=img_url
         body='<p><strong>Création 2019<br />Première expérimentation publique </strong><br />Dans un cercle sont liés, par les poignets, deux êtres assez archaïques. L’un peut blesser ou enfermer l’autre. Ils peuvent aussi s’aider ou se protéger mutuellement et conquérir, ensemble, des espaces inaccessibles à un corps isolé.<br /> Ce duo, à la frontière entre la danse et le cirque, interroge la notion d’attachement physique et joue avec l’éventail de toutes les possibilités offertes par la présence, dans un espace restreint, qui pourrait être une prison ou une matrice, de deux corps extrêmement dissemblables. </p>'
-%}</div>
-
-      <div id="samedi5" >
+%}
+                </div>
+                <div id="samedi5" >
  {% include programm_row.html
     hour="20h00"
     header_title='Scène ouverte'
@@ -321,13 +318,10 @@ layout: default
         <p><small>* D’après une étude réalisée auprès de 37 personnes tirées au hasard en loge</small></p>
         <p class="text-center"><a class="btn btn-info" href="https://www.facebook.com/baldelesvedette/" role="button">Page facebook</a></p>'
 %}
-
-
-
-        </div>    </div>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
-</div>
 
 
 <div id="partenaires" class="bg-white padding-top padding-bottom text-primary py-5">
@@ -463,7 +457,7 @@ function initMap() {
 
  <br / >
 <h5> <span class="fa fa-ellipsis-v"></span>  École publique. Effectifs et équipe pédagogique stable</h5>
-        <span style="font-style: italic"> Saint Servais. Télégramme • jeudi 6 septembre 2018 </span> </p>
+<p><span style="font-style: italic"> Saint Servais. Télégramme • jeudi 6 septembre 2018 </span> </p>
 <p>L’école publique a rouvert ses portes aux 135 élèves, dirigée par Karine Cornily qui entame sa deuxième année de direction. Deux classes toutes neuves accueillent désormais les élèves de CE2-CM1 et CM1-CM2. <br / >
 
 Côté équipe éducative, Sandrine Riou s’occupe des 24 écoliers de CM1-CM2 ; Virginie Chaffotec, des 22 élèves de CE2-CM1 ; Stéphanie Denniel, des 21 élèves de CE1-CE2 ; Aurélien Chevallier, des 17 écoliers de CP. Catherine Robic a la charge des 25 élèves de grande section, épaulée par Adeline Bellec, assistante territoriale. La classe de Karine Cornily compte 26 enfants de petite et moyenne sections, avec Angélique Bord comme Atsem. Estelle Kerbrat assurera la décharge de direction et complétera son temps en grande section de maternelle. <br / >
@@ -472,7 +466,7 @@ Le projet pédagogique sera axé sur le « Festival du Marentin », qui aura lie
 
 <br / >
 <h5> <span class="fa fa-ellipsis-v"></span>  Stabilité des effectifs à l'école publique</h5>
-        <span style="font-style: italic"> Saint Servais. Ouest-France • vendredi 7 septembre 2018
+<p><span style="font-style: italic"> Saint Servais. Ouest-France • vendredi 7 septembre 2018
 </span> </p>
 <p>Karine Cornily entame sa deuxième année de direction à l'école publique, où elle enseigne depuis de nombreuses années. L'établissement est déjà revenu à la semaine de quatre jours, depuis septembre 2017. Et depuis décembre 2017, l'école a pris possession de deux classes neuves. Elle est en attente d'un équipement informatique après avoir été retenue dans le cadre du plan Écoles numériques rurales. <br / >
 Avec un effectif de 135 élèves à la rentrée, auxquels s'ajouteront quelques nouveaux en janvier 2019, cette rentrée s'est effectuée dans la stabilité... Sandrine Riou s'occupe des 24 écoliers de CM1-CM2 ; Virginie Chaffotec, dès 22 élèves de CE2-CM1 ; Stéphanie Denniel, des 21 élèves de CE1-CE2 ; Aurélien Chevallier, des 17 écoliers de CP. Au niveau des classes maternelles, Catherine Robic est à la charge des 25 élèves de grande section, accompagnée d'Adeline Bellec en qualité d'assistante territoriale. Karine Cornily s'occupe des 26 plus jeunes enfants de l'établissement, réunis dans la classe de petite et moyenne sections, avec Angélique Bord comme Agent territorial spécialisé des écoles maternelle (Atsem). Par ailleurs, Estelle Kerbrat assurera durant l'année scolaire, la décharge de direction et complétera son temps en grande section de maternelle. <br / >
@@ -482,7 +476,7 @@ Comme les effectifs, l'équipe reste stable. L'école axera son projet pédagogi
 
 <br / >
 <h5> <span class="fa fa-ellipsis-v"></span>  Festival Le Marentin : atelier de construction de décors</h5>
-        <span style="font-style: italic"> Saint Servais. Ouest-France • vendredi 2 novembre 2018
+<p><span style="font-style: italic"> Saint Servais. Ouest-France • vendredi 2 novembre 2018
 </span> </p>
 <p> La compagnie Les Cordes associées organise des ateliers participatifs pour préparer le festival Le Marentin. <br / >
 
@@ -494,6 +488,3 @@ Les intéressés doivent s'inscrire auprès de l'équipe des Cordes associées. 
 
 Contact : <a href="mailto:lescordesassociees@gmail.com"  traget="_blank"> lescordesassociees@gmail.com</a>. Renseignements au 06 99 26 61 91. Sur Facebook : <a href="https://www.facebook.com/festival.le.marentin/" traget="_blank"> festival.le.marentin</a>.)  </p>
 <br / >
-
-
- </div>
