@@ -7,8 +7,12 @@
             <div class="popover" style="{% if include.content_position != 'right' %}right: 0;left: auto;{% else %}left:0;right:auto;{% endif %}top:0;bottom:0;border:none;">
                 <div class="arrow d-none d-sm-block" style="position: absolute;"></div>
             </div>
-{% if include.header_title or include.header_badge or include.header_subtitle %}
-            <div class="card-header clearfix pt-2- pb-1">
+{% if include.header %}
+            <div class="card-header clearfix pb-1">
+                {{ include.header }}
+            </div>
+{% elsif include.header_title or include.header_badge or include.header_subtitle %}
+            <div class="card-header clearfix pb-1">
     {% unless include.header_subtitle %}
         {% if include.header_badge %}
                 <span class="badge badge-{{ include.header_badge_class | default: 'default' }} float-right">{{ include.header_badge }}</span>

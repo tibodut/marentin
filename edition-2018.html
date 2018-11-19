@@ -6,19 +6,19 @@ layout: default
     <div class="container d-flex flex-column align-items-end h-100">
 
 {% include menu.html %}
-                                                                   
+
                 <h1 class="mt-auto mb-3 p-3 bg-primary text-light">Le Marentin</h1>
                 <p class="mb-auto p-2 bg-light text-primary">Festival d'Art de rue</p>
 </div>
-          
+
             <div class="col-sm-4">
                 <div class="text-primary text-center" style="width: 100px;height: 100px;border-radius: 100%;font-weight: bold;border: 10px solid;border-color: primary; margin-top:50px;margin-left:50px;padding-top: 20px;line-height: 20px;background-color: rgba(255,255,255,.7);">3<sup>ème</sup><br>édition</div>
-            
-  </div>          
 
-       
+  </div>
+
+
         <div class="row">
-         
+
 <div class="col-sm-8 text-right">
                 <p style="line-height: 2em;">
                     <a class="btn btn-info" href="{{site.baseurl}}" role="button"><span class="fa fa-info-circle"></span> Le festival</a><br />
@@ -33,7 +33,7 @@ layout: default
                     <a class="btn btn-default" href="#partenaires" role="button" style="background:rgba(255,255,255,.7)"> Les partenaires <span class="fa fa-users"></span></a><br />
                     <a class="btn btn-default" href="#revue-de-presse" role="button" style="background:rgba(255,255,255,.7)"> La revue de presse <span class="fa fa-film"></span></a></p>
                       </div>
-</div> </div> 
+</div> </div>
         <a id="back-to-top" class="btn btn-primary" href="#haut-de-page" role="button"><span class="fa fa-chevron-circle-up"></span> Haut de page</a>
 
      <div class="bg-white py-5">
@@ -61,14 +61,14 @@ layout: default
         </style>
         <div class="timeline-v position-relative">
             <div style="position:absolute;top:0;bottom:0;left:0;right:50%;border-right:1px solid white"></div>
-            <div id="vendredi1" > 
-             
+            <div id="vendredi1" >
+
   {% capture img_url %}{{site.baseurl}}/img/logos/logo-APE.png{% endcapture %}
    {% include programm_row.html
    content_position="right"
     hour="17h30"
-    header='Marché de Noël de l’APE'
-     img_url=img_url
+    header_title='Marché de Noël de l’APE'
+    img_url=img_url
     body='<p>Le marché de Noël de l’Association des Parents d’Élèves de Saint Servais ouvrira ses portes de 17h30 à 21h30 sous le chapiteau du festival.<br /> De nombreux créateurs et artisans ont répondu présents à ce rendez-vous hivernal. Nous pouvons vous promettre un moment chaleureux et convivial, autour de ces stands d’artisanat local. Une restauration et une buvette seront à proximité du marché.<br /> <br />
 <a class="btn btn-info" href="http://www.facebook.com/APE-école-de-Saint-Servais-1235766026479687/" role="button">Page facebook de l’APE</a>
 <p> Artisans présents : </p>
@@ -81,46 +81,54 @@ layout: default
 <a class="btn btn-warning" href=" https://www.facebook.com/jaunecitronetcie/"  role="button"> Jaune citrons et compagnie</a>
 <a class="btn btn-warning" href=" http://www.mercerie-oplaisirdescoutures.fr/ "  role="button"> O plaisir des coutures</a>
 <a class="btn btn-warning" href=" https://www.kiwietcompagnie.fr/"  role="button"> Kiwi et compagnie</a>
-
 </p>'
 
 %}
 
-                
+
 {% include programm_row.html
     hour="18h30"
-    header='Les enfants de St Servais <br />Ouverture des festivités <span class="badge badge-warning float-right">Deambulation</span>'
+    header_title='Les enfants de St Servais'
+	header_subtitle='Ouverture des festivités'
+	header_badge='Deambulation'
+	header_badge_class='warning'
     body='<p>Rendez-vous à 18h30 au bar l’Inattendue pour l’ouverture du festival. <br /> Les enfants volontaires de la commune ont travaillé avec la compagnie Les Cordes Associées sur une déambulation surprenante pour ouvrir les festivités. <br /> Venez nombreux soutenir ces jeunes artistes. </p>'
 %}
-            
+
             {% include programm_row.html
               content_position="right"
     hour="19h25"
-    header='Présentation du festival'
+    header_title='Présentation du festival'
     body='<p>Venez découvrir le projet derrière le festival Le Marentin.<br />Les intervenants, les partenaires, la portée du projet...</p>'
 %}
-            
+
 {% capture img_url %}{{site.baseurl}}/img/pom tchak.jpg{% endcapture %}
 {% include programm_row.html
       hour="19h30"
-    header='« La Course du Vent » <br />Cie Poum Tchak <span class="badge badge-primary float-right">Chapiteau</span>'
+    header_title='« La Course du Vent »'
+	header_subtitle='Cie Poum Tchak'
+	header_badge='Chapiteau'
+	header_badge_class='primary'
     img_url=img_url
     img_title='La Course du Vent, Cie Poum Tchak'
-                body='<p><strong>Spectacle musical <br />Tous publics </strong><br /> 
-                Nous sommes au milieu du 19ème siècle... <br /> 
+                body='<p><strong>Spectacle musical <br />Tous publics </strong><br />
+                Nous sommes au milieu du 19ème siècle... <br />
                 M. de Montgolfier, personnage aussi fou qu’attachant, se laisse convaincre par 3 écoliers de les emmener à bord de son superbe ballon à la découverte du monde.<br /> Au son des guitares, accordéon et contrebasse, nous voyagerons ainsi entre terre, ciel et mer en couleurs et en chansons. Lâchez du lest, la montgolfière va s’envoler.<br /> <br />
 <a class="btn btn-info" href="https://www.facebook.com/poumtchak0/" role="button">Page facebook</a> </p>'
 
 %}</div>
-<div id="vendredi2" > 
+<div id="vendredi2" >
 {% capture img_url %}{{site.baseurl}}/img/affiche fgobeurs.jpg{% endcapture %}
 {% include programm_row.html
     content_position="right"
     hour="21h30"
-    header='« Les Gobeurs d’Enclumes » <br /> Cie Qui s’Y Colle <span class="badge badge-danger float-right">Bar L’Inattendue</span>'
+    header_title='« Les Gobeurs d’Enclumes »'
+	header_subtitle='Cie Qui s’Y Colle'
+	header_badge='Bar L’Inattendue'
+	header_badge_class='danger'
     img_url=img_url
     img_title='Les gobeurs d’enclumes, Cie Qui s’Y Colle'
-    body='<p><strong>Spectacle d’improvisation <br />Tous publics</strong><br /> 
+    body='<p><strong>Spectacle d’improvisation <br />Tous publics</strong><br />
     Dans la vie comme en spectacle, pour ces deux gars c’est toujours la même histoire : Ils raffolent à se pousser toujours plus loin vers l’humour, la ruse et la prise de risque. Ils aiment ça, et ça se voit. Une confiance s’installe, les gens prennent une place de plus en plus importante dans la création d’histoires, les processus narratifs deviennent de plus en plus périlleux, les pirouettes de plus en plus astucieuses, la performance jubilatoire.<br /> <br />
 <a class="btn btn-info" href="http://quisycolle.wixsite.com/quisycolle/les-gobeurs-d-enclumes-1" role="button">Site internet</a> </p>'
 
@@ -132,7 +140,7 @@ layout: default
         <br />
         <br />
          <div class="container">
- 
+
        <h5 class="text-center">Samedi 15 décembre 2018</h5>
              <br />
         <style>
@@ -140,35 +148,45 @@ layout: default
         </style>
         <div class="timeline-v position-relative">
             <div style="position:absolute;top:0;bottom:0;left:0;right:50%;border-right:1px solid white"></div>
-<div id="samedi1" > 
+<div id="samedi1" >
                         {% capture img_url %}{{site.baseurl}}/img/songe1.jpg{% endcapture %}
             {% include programm_row.html
     hour="11h30"
-    header=' « Le Songe du Conteur » Cie Singe Diesel <span class="badge badge-primary float-right">Chapiteau</span>'
+    header_title='« Le Songe du Conteur »'
+	header_subtitle='Cie Singe Diesel'
+	header_badge='Chapiteau'
+	header_badge_class='primary'
      img_url=img_url
     img_title='Le songe du conteur, Cie Singe Diesel'
     body='<p><strong>Spectacle de marionnettes.<br /> À partir de 5 ans <br /> Jauge limitée à 80 personnes</strong><br /> Voyageur de l’impossible, entouré de valises pleines d’histoires, Juan libère des personnages improbables pour nous emporter dans l’univers poétique des contes. À chaque histoire correspond une valise, à chaque valise ouverte correspond plusieurs marionnettes avec un univers unique ponctué d’une lecture emprise avec la réalité. <br /> <br />
 <a class="btn btn-info" href=" http://singediesel.guilers.org/" role="button">Site internet</a> </p>'
-       
+
 %}
 
             {% capture img_url %}{{site.baseurl}}/img/harpe1.jpg{% endcapture %}
  {% include programm_row.html
     content_position="right"
     hour="12h30"
-    header='Harpe celtique <br /> Tiphaine Escarguel <span class="badge badge-info float-right">Chapiteau Bar</span>'
+    header_title='Harpe celtique'
+	header_subtitle='Tiphaine Escarguel'
+	header_badge='Chapiteau Bar'
+	header_badge_class='info'
     img_url=img_url
+    img_fluid='true'
     img_title='Concert de harpe, Tiphaine Escarguel'
     body='<p><strong>Concert</strong><br /> Dès l’age de 4 ans, elle a décidé de faire de la harpe sa passion puis plus tard son métier. Elle enseigne depuis plus de 10 ans la harpe celtique en région brestoise et se produit avec différents groupes de musique celtique, ou rock à la harpe électrique. <br /> Artiste curieuse de toutes les influences musicales, elle est très attachée aux personnes et aux liens qui l’inspirent. <br /> Nous avons le privilège de l’accueillir dans notre chapiteau bar dès 12h30, elle proposera un temps d’échange avec les enfants pour découvrir la harpe. Ensuite, nous vous donnons rendez-vous dans l’église de Saint Servais à partir de 17h45. Il s’agit pour nous d’une belle occasion de faire découvrir aux festivaliers le patrimoine de Saint Servais.<br /> <br />
-<a class="btn btn-info" href=" http://tiphaine-escarguel.fr/" role="button">Site internet</a> </p>'  
-   
+<a class="btn btn-info" href=" http://tiphaine-escarguel.fr/" role="button">Site internet</a> </p>'
+
 %}</div>
-    <div id="samedi2" > 
-        
+    <div id="samedi2" >
+
         {% capture img_url %}{{site.baseurl}}/img/gemeaux.png{% endcapture %}
             {% include programm_row.html
     hour="14h10"
-    header='Gémeaux <br />Cie Les bô jours <span class="badge badge-success float-right">Scène extérieure</span>'
+    header_title='Gémeaux'
+	header_subtitle='Cie Les bô jours'
+	header_badge='Scène extérieure'
+	header_badge_class='success'
         img_url=img_url
         body='<p><strong>Création 2019<br />Première expérimentation publique </strong><br />Dans un cercle sont liés, par les poignets, deux êtres assez archaïques. L’un peut blesser ou enfermer l’autre. Ils peuvent aussi s’aider ou se protéger mutuellement et conquérir, ensemble, des espaces inaccessibles à un corps isolé.<br /> Ce duo, à la frontière entre la danse et le cirque, interroge la notion d’attachement physique et joue avec l’éventail de toutes les possibilités offertes par la présence, dans un espace restreint, qui pourrait être une prison ou une matrice, de deux corps extrêmement dissemblables. </p>'
 %}
@@ -177,21 +195,27 @@ layout: default
             {% include programm_row.html
     content_position="right"
     hour="15h00"
-    header=' La trajectoire du poisson volant <br />Mickaël Guerrand<br /> <span class="badge badge-info float-right">Chapiteau Bar</span>'
+    header_title=' La trajectoire du poisson volant'
+	header_subtitle='Mickaël Guerrand<br />'
+	header_badge='Chapiteau Bar'
+	header_badge_class='info'
     img_url=img_url
         body='<p><strong>Concert</strong><br /> Originaire de Brest, Mickaël Guerrand sillonne la France, depuis une quinzaine d’années. Ses chansons rock en bandoulière, il forge sa plume et son identité de café-concerts en festivals, s’illustrant notamment en première partie de Tété, Eiffel, La Grande Sophie...<br /> Des ingrédients savamment dosés, liés par une voix étonnante, accrocheuse, servie sur un groove authentique avec poésie et simplicité. Longueur d’Ondes.  <br /><br />
 <a class="btn btn-info" href=" http://mickaelguerrand.com/" role="button">Site internet</a> </p>'
 
 %}</div>
-  <div id="samedi3" > 
+  <div id="samedi3" >
       {% capture img_url %}{{site.baseurl}}/img/pom tchak.jpg{% endcapture %}
             {% include programm_row.html
     hour="16h10"
-    header='« La Course du Vent » <br />Cie Poum Tchak <span class="badge badge-primary float-right">Chapiteau</span>'
+    header_title='« La Course du Vent »'
+	header_subtitle='Cie Poum Tchak'
+	header_badge='Chapiteau'
+	header_badge_class='primary'
     img_url=img_url
     img_title='La Course du Vent, Cie Poum Tchak'
-    body='<p><strong>Spectacle musical <br />Tous publics </strong><br /> 
-                Nous sommes au milieu du 19ème siècle... <br /> 
+    body='<p><strong>Spectacle musical <br />Tous publics </strong><br />
+                Nous sommes au milieu du 19ème siècle... <br />
                 M. de Montgolfier, personnage aussi fou qu’attachant, se laisse convaincre par 3 écoliers de les emmener à bord de son superbe ballon à la découverte du monde.<br /> Au son des guitares, accordéon et contrebasse, nous voyagerons ainsi entre terre, ciel et mer en couleurs et en chansons. Lâchez du lest, la montgolfière va s’envoler.<br /> <br />
 <a class="btn btn-info" href="https://www.facebook.com/poumtchak0/" role="button">Page facebook</a> </p>'
 %}
@@ -200,39 +224,50 @@ layout: default
             {% include programm_row.html
     content_position="right"
     hour="17h40"
-    header='« Les Gobeurs d’Enclumes » <br /> Cie Qui s’Y Colle <span class="badge badge-danger float-right">Bar L’Inattendue</span>'
+    header_title='« Les Gobeurs d’Enclumes »'
+	header_subtitle='Cie Qui s’Y Colle'
+	header_badge='Bar L’Inattendue'
+	header_badge_class='danger'
     img_url=img_url
     img_title='Cie Qui s’Y Colle'
-    body='<p><strong>Spectacle d’improvisation <br />Tous publics</strong><br /> 
+    body='<p><strong>Spectacle d’improvisation <br />Tous publics</strong><br />
     Dans la vie comme en spectacle, pour ces deux gars c’est toujours la même histoire : Ils raffolent à se pousser toujours plus loin vers l’humour, la ruse et la prise de risque. Ils aiment ça, et ça se voit. Une confiance s’installe, les gens prennent une place de plus en plus importante dans la création d’histoires, les processus narratifs deviennent de plus en plus périlleux, les pirouettes de plus en plus astucieuses, la performance jubilatoire.<br /> <br />
 <a class="btn btn-info" href="http://quisycolle.wixsite.com/quisycolle/les-gobeurs-d-enclumes-1" role="button">Site internet</a> </p>'
 %}
             {% capture img_url %}{{site.baseurl}}/img/harpe1.jpg{% endcapture %}
  {% include programm_row.html
     hour="17h45"
-    header='Harpe celtique <br /> Tiphaine Escarguel <span class="badge badge-info float-right">Eglise</span>'
+    header_title='Harpe celtique'
+	header_subtitle='Tiphaine Escarguel'
+	header_badge='Eglise'
+	header_badge_class='info'
     img_url=img_url
     img_title='Concert de harpe, Tiphaine Escarguel'
       body='<p><strong>Concert</strong><br /> Dès l’age de 4 ans, elle a décidé de faire de la harpe sa passion puis plus tard son métier. Elle enseigne depuis plus de 10 ans la harpe celtique en région brestoise et se produit avec différents groupes de musique celtique, ou rock à la harpe électrique. <br /> Artiste curieuse de toutes les influences musicales, elle est très attachée aux personnes et aux liens qui l’inspirent. <br /> Nous avons le privilège de l’accueillir dans notre chapiteau bar dès 12h30, elle proposera un temps d’échange avec les enfants pour découvrir la harpe. Ensuite, nous vous donnons rendez-vous dans l’église de Saint Servais à partir de 17h45. Il s’agit pour nous d’une belle occasion de faire découvrir aux festivaliers le patrimoine de Saint Servais.<br /> <br />
-<a class="btn btn-info" href=" http://tiphaine-escarguel.fr/" role="button">Site internet</a> </p>'  
+<a class="btn btn-info" href=" http://tiphaine-escarguel.fr/" role="button">Site internet</a> </p>'
 %}</div>
-<div id="samedi4" > 
+<div id="samedi4" >
             {% capture img_url %}{{site.baseurl}}/img/bobby 2.jpg{% endcapture %}
             {% include programm_row.html
     content_position="right"
     hour="18h30"
-    header='Bobby et moi <br /> Cie Poc <span class="badge badge-primary float-right">Chapiteau</span>'
+    header_title='Bobby et moi'
+	header_subtitle='Cie Poc'
+	header_badge='Chapiteau'
+	header_badge_class='primary'
     img_url=img_url
     img_title='Cie Poc'
     body='<p><strong>Tous publics</strong><br /> C’est la rencontre entre un jongleur et la voix d’un musicien qui, le temps d’un disque, s’accompagnent, s’apprivoisent, se taquinent et partagent, avec nous, leur intimité. Deux solistes qui se jouent l’un de l’autre pour former un duo improbable, rythmé de malice et de surprises. Une petite ballade pleine de magie et de poésie, où les balles jouent à cache cache, les chapeaux s’envolent, les objets et les notes s’entremêlent. <br /> Bobby McFerrin, magicien de la voix, s’échappe un instant de ce vinyle, pour rencontrer un jongleur, musicien du geste. Leur complicité, aussi forte qu’éphémère, vibre et respire le temps d’un 33 petits tours, et puis... s’en va... <br />  <br />
 <a class="btn btn-info" href="http://compagniepoc.com/compagnie/" role="button">Site internet</a> </p>'
 
 %}
-    
-     {% capture img_url %}{{site.baseurl}}/img/7786650820_disque-vinyle.jpg{% endcapture %}     
+
+     {% capture img_url %}{{site.baseurl}}/img/7786650820_disque-vinyle.jpg{% endcapture %}
  {% include programm_row.html
     hour="19h00"
-    header='DJ Younity <br /> <span class="badge badge-info float-right">Chapiteau Bar</span>'
+    header_title='DJ Younity'
+	header_badge='Chapiteau Bar'
+	header_badge_class='info'
     img_url=img_url
     body='<p><strong>Session Mix</strong><br /> Ambiance chaleureuse pour danser, bouger mais aussi discuter. En parallèle, vous pourrez découvrir ou re-découvrir les images des éditions précédentes du festival. Une restauration et une buvette seront à proximité de la piste de danse.</p>'
 %}
@@ -241,102 +276,117 @@ layout: default
            {% include programm_row.html
                 content_position="right"
     hour="19h30"
-    header='Gémeaux <br />Cie Les bô jours <span class="badge badge-primary float-right">Chapiteau</span>'
+    header_title='Gémeaux'
+	header_subtitle='Cie Les bô jours'
+	header_badge='Chapiteau'
+	header_badge_class='primary'
     img_url=img_url
         body='<p><strong>Création 2019<br />Première expérimentation publique </strong><br />Dans un cercle sont liés, par les poignets, deux êtres assez archaïques. L’un peut blesser ou enfermer l’autre. Ils peuvent aussi s’aider ou se protéger mutuellement et conquérir, ensemble, des espaces inaccessibles à un corps isolé.<br /> Ce duo, à la frontière entre la danse et le cirque, interroge la notion d’attachement physique et joue avec l’éventail de toutes les possibilités offertes par la présence, dans un espace restreint, qui pourrait être une prison ou une matrice, de deux corps extrêmement dissemblables. </p>'
 %}</div>
-            
-      <div id="samedi5" >             
+
+      <div id="samedi5" >
  {% include programm_row.html
     hour="20h00"
-    header='Scène ouverte <br /><span class="badge badge-info float-right">Scène Bar</span>'
+    header_title='Scène ouverte'
+	header_subtitle=''
+	header_badge='Scène Bar'
+	header_badge_class='info'
     body='<p>Une occasion de découvrir de jeunes et nouveaux talents, ou encore de nouvelles pratiques artistiques. <br /> Laissez-vous surprendre. <br /> <br />Inscriptions : <br />Contactez la <a href="mailto:lescordesassociees@gmail.com" traget="_blank"> Cie Les Cordes Associées </a> </p>'
 
 %}
-     {% capture img_url %}{{site.baseurl}}/img/7786650820_disque-vinyle.jpg{% endcapture %}     
+     {% capture img_url %}{{site.baseurl}}/img/7786650820_disque-vinyle.jpg{% endcapture %}
             {% include programm_row.html
     content_position="right"
     hour="20h30"
-    header='DJ Younity <br /> <span class="badge badge-info float-right">Chapiteau Bar</span>'
+    header_title='DJ Younity'
+	header_badge='Chapiteau Bar'
+	header_badge_class='info'
           img_url=img_url
     body='<p><strong>Session Mix</strong><br /> Ambiance chaleureuse pour danser, bouger mais aussi discuter. En parallèle, vous pourrez découvrir ou re-découvrir les images des éditions précédentes du festival. Une restauration et une buvette seront à proximité de la piste de danse.</p>'
 %}
                  {% capture img_url %}{{site.baseurl}}/img/vedette1.jpg{% endcapture %}
- {% include programm_row.html
+{% include programm_row.html
     hour="21h00"
-    header='Les Vedette <br /> Cie Une de Plus <span class="badge badge-danger float-right">Bar L’Inattendue</span>'
+    header_title='Les Vedette'
+    header_subtitle='Cie Une de Plus'
+    header_badge='Bar L’Inattendue'
+    header_badge_class='danger'
     img_url=img_url
     img_title='Les Vedette, Cie Une de Plus'
-    body='<p>Les Vedette, c’est un bal populaire débridé. <br /> C’est un bastringue qui vous sert avec élégance de la Musette de luxe en entrée, de la Variété haut de gamme en plat principal et pour ceux qui ont encore faim de danse du Rock qui tâche en dessert ! <br /> Le tout pimenté par la présence mystique de Gérard Godard de Paris, Régis Svensky, sosie d’Elvis dans les pays de l’Est, et du champion du monde d’accordéon de vitesse synchro batterie Patrick Suze. <br /> Votre rencontre avec Les Vedette, sera l’évènement le plus marquant de votre vie ! * <br /> Bon appétit ! <br /> <br /> * D’après une étude réalisée auprès de 37 personnes tirées au hasard en loge <br /> 
-<a class="btn btn-info" href="https://www.facebook.com/baldelesvedette/" role="button">Page facebook</a> </p>'
+    body='<p class="text-justify">Les Vedette, c’est un bal populaire débridé.<br>
+        C’est un bastringue qui vous sert avec élégance de la Musette de luxe en entrée, de la Variété haut de gamme en plat principal et pour ceux qui ont encore faim de danse du Rock qui tâche en dessert !<br>
+        Le tout pimenté par la présence mystique de Gérard Godard de Paris, Régis Svensky, sosie d’Elvis dans les pays de l’Est, et du champion du monde d’accordéon de vitesse synchro batterie Patrick Suze.<br>
+        Votre rencontre avec Les Vedette, sera l’évènement le plus marquant de votre vie ! *<br>
+        Bon appétit !</p>
+        <p><small>* D’après une étude réalisée auprès de 37 personnes tirées au hasard en loge</small></p>
+        <p class="text-center"><a class="btn btn-info" href="https://www.facebook.com/baldelesvedette/" role="button">Page facebook</a></p>'
+%}
 
-%}       
-            
- 
-            
+
+
         </div>    </div>
     </div>
 </div>
 </div>
 
-    
+
 <div id="partenaires" class="bg-white padding-top padding-bottom text-primary py-5">
     <div class="container">
         <h4>Les partenaires</h4>
          <br />
-        <br /> 
- 
+        <br />
+
      <div class="row padding-top text-center">
-      
+
           <div class="col-sm-4">
            <a href="http://www.atelier-du-garo.com/" traget="_blank"> <img src="{{site.baseurl}}/img/logos/logo-atelierdugaro.png" alt="Ateliers du Garo" height="100px"/></a>
              <p>Atelier du Garo</p>
         </div>
-        
+
           <div class="col-sm-4">
    <a href="http://www.facebook.com/APE-école-de-Saint-Servais-1235766026479687/" traget="_blank"> <img src="{{site.baseurl}}/img/logos/logo-APE.png" alt="Association des parents d'élèves - Saint Servais" height="100px"/></a>
  <p>Association des parents d'élèves de Saint Servais </p>
         </div>
-        
+
               <div class="col-sm-4">
         <a href="http://www.facebook.com/pages/category/Community/Comité-des-fêtes-de-Saint-Servais-1208940269167921" traget="_blank"> <img src="{{site.baseurl}}/img/logos/logo CDF.png" alt="Comité des Fêtes de Saint Servais" height="100px"/></a>
- <p>Comité des fêtes de Saint Servais</p>     
+ <p>Comité des fêtes de Saint Servais</p>
         </div>
-         
+
               <div class="col-sm-4">
         <a href="https://saint-servais-29.fr/" traget="_blank"> <img src="{{site.baseurl}}/img/logos/logo mairie.png" alt="Mairie de Saint Servais" height="100px"/></a>
-<p>Mairie de Saint Servais</p>  
+<p>Mairie de Saint Servais</p>
         </div>
-         
+
               <div class="col-sm-4">
 <a href="http://www.garage-bro-landi.fr/" traget="_blank"> <img src="{{site.baseurl}}/img/logos/garage bro landi.png" alt="Garage Bro Landi" height="100px"/></a>
 <p>Garage de Bro Landi</p>
         </div>
-         
+
               <div class="col-sm-4">
        <a href="http://www.pays-de-landivisiau.com/" traget="_blank"> <img src="{{site.baseurl}}/img/logos/logo-communaute_communes_landivisiau.png" alt="Communauté de Communes du Pays de Landivisiau" height="100px"/></a>
-<p>Communauté de communes du Pays de Landivisiau   </p> 
-        </div>     
-         
+<p>Communauté de communes du Pays de Landivisiau   </p>
+        </div>
+
          <div class="col-sm-4">
       <a href="http://www.facebook.com/pages/category/Tobacco-Store/Linattendue-946862415351374/" traget="_blank"> <img src="{{site.baseurl}}/img/logos/logo-l_inattendue.png" alt="Bar L'Inattendue" height="50px"/></a>
 <p>Le bar l'Inattendue</p>
         </div>
- 
+
             <div class="col-sm-4">
  <a href="http://www.e-leclerc.com/landivisiau" traget="_blank"> <img src="{{site.baseurl}}/img/logos/leclerc.png" alt="Leclerc de Landivisiau" height="100px"/></a>
-<p>Leclerc de Landivisiau</p> 
+<p>Leclerc de Landivisiau</p>
         </div>
-         
+
               <div class="col-sm-4">
 <a href="http://www.elorn-evasion.com/" traget="_blank"> <img src="{{site.baseurl}}/img/logos/logo-cars-elorn.png" alt="Les Cars de l'Elorn" height="100px"/></a>
 <p>Les cars de l'Elorn</p>
         </div>
 
-      </div> 
+      </div>
 
-         </div> 
-    
+         </div>
+
    <div id="le-lieu" class="bg-secondary padding-top padding-bottom text-white py-5">
      <div class="container">
        <h4>Le Lieu</h4>
@@ -369,17 +419,17 @@ function initMap() {
 
 
  <div id="revue-de-presse" class="bg-white padding-top padding-bottom text-primary py-5">
-    <div class="container">    
+    <div class="container">
 <h4>La revue de presse</h4>
 <br / >
      <div id="RP2018" class="carousel slide col-sm-12" data-ride="carousel">
-      
+
       <ol class="carousel-indicators">
        <li data-target="#RP2018" data-slide-to="0" class="active"></li>
     <li data-target="#RP2018" data-slide-to="1"></li>
      <li data-target="#RP2018" data-slide-to="2"></li>
-  
-  
+
+
 
   </ol>
 
@@ -399,7 +449,7 @@ function initMap() {
            <p class="position-relative z-index-1000 text-left"> Ouest France - 2 novembre 2018</p>
 
     </div>
-    
+
 </div>
         <a class="carousel-control-prev" href="#RP2018" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" ></span>
@@ -410,28 +460,28 @@ function initMap() {
     <span class="sr-only">Next</span>
   </a>
 </div>
-        
- <br / >   
-<h5> <span class="fa fa-ellipsis-v"></span>  École publique. Effectifs et équipe pédagogique stable</h5> 
+
+ <br / >
+<h5> <span class="fa fa-ellipsis-v"></span>  École publique. Effectifs et équipe pédagogique stable</h5>
         <span style="font-style: italic"> Saint Servais. Télégramme • jeudi 6 septembre 2018 </span> </p>
 <p>L’école publique a rouvert ses portes aux 135 élèves, dirigée par Karine Cornily qui entame sa deuxième année de direction. Deux classes toutes neuves accueillent désormais les élèves de CE2-CM1 et CM1-CM2. <br / >
 
 Côté équipe éducative, Sandrine Riou s’occupe des 24 écoliers de CM1-CM2 ; Virginie Chaffotec, des 22 élèves de CE2-CM1 ; Stéphanie Denniel, des 21 élèves de CE1-CE2 ; Aurélien Chevallier, des 17 écoliers de CP. Catherine Robic a la charge des 25 élèves de grande section, épaulée par Adeline Bellec, assistante territoriale. La classe de Karine Cornily compte 26 enfants de petite et moyenne sections, avec Angélique Bord comme Atsem. Estelle Kerbrat assurera la décharge de direction et complétera son temps en grande section de maternelle. <br / >
-Le projet pédagogique sera axé sur le « Festival du Marentin », qui aura lieu en décembre sur la commune, et le 100e anniversaire de l’Armistice de 1918 sera le support d’un travail pour la classe de CE2-CM1. À noter que l’école a été retenue dans le cadre du plan « Écoles numériques rurales », et sera prochainement équipée d’un équipement informatique. </p>   
-<br / >   
+Le projet pédagogique sera axé sur le « Festival du Marentin », qui aura lieu en décembre sur la commune, et le 100e anniversaire de l’Armistice de 1918 sera le support d’un travail pour la classe de CE2-CM1. À noter que l’école a été retenue dans le cadre du plan « Écoles numériques rurales », et sera prochainement équipée d’un équipement informatique. </p>
+<br / >
 
-<br / >   
-<h5> <span class="fa fa-ellipsis-v"></span>  Stabilité des effectifs à l'école publique</h5> 
+<br / >
+<h5> <span class="fa fa-ellipsis-v"></span>  Stabilité des effectifs à l'école publique</h5>
         <span style="font-style: italic"> Saint Servais. Ouest-France • vendredi 7 septembre 2018
 </span> </p>
 <p>Karine Cornily entame sa deuxième année de direction à l'école publique, où elle enseigne depuis de nombreuses années. L'établissement est déjà revenu à la semaine de quatre jours, depuis septembre 2017. Et depuis décembre 2017, l'école a pris possession de deux classes neuves. Elle est en attente d'un équipement informatique après avoir été retenue dans le cadre du plan Écoles numériques rurales. <br / >
 Avec un effectif de 135 élèves à la rentrée, auxquels s'ajouteront quelques nouveaux en janvier 2019, cette rentrée s'est effectuée dans la stabilité... Sandrine Riou s'occupe des 24 écoliers de CM1-CM2 ; Virginie Chaffotec, dès 22 élèves de CE2-CM1 ; Stéphanie Denniel, des 21 élèves de CE1-CE2 ; Aurélien Chevallier, des 17 écoliers de CP. Au niveau des classes maternelles, Catherine Robic est à la charge des 25 élèves de grande section, accompagnée d'Adeline Bellec en qualité d'assistante territoriale. Karine Cornily s'occupe des 26 plus jeunes enfants de l'établissement, réunis dans la classe de petite et moyenne sections, avec Angélique Bord comme Agent territorial spécialisé des écoles maternelle (Atsem). Par ailleurs, Estelle Kerbrat assurera durant l'année scolaire, la décharge de direction et complétera son temps en grande section de maternelle. <br / >
-Comme les effectifs, l'équipe reste stable. L'école axera son projet pédagogique autour du Festival du Marentin, en décembre. Les élèves volontaires participeront à l'ouverture du spectacle. D'autre part, un travail sera réalisé par la classe de CE2-CM1, sur le centenaire de l'Armistice de 1918. Avec notamment une exposition dans la commune. </p>   
-<br / >   
+Comme les effectifs, l'équipe reste stable. L'école axera son projet pédagogique autour du Festival du Marentin, en décembre. Les élèves volontaires participeront à l'ouverture du spectacle. D'autre part, un travail sera réalisé par la classe de CE2-CM1, sur le centenaire de l'Armistice de 1918. Avec notamment une exposition dans la commune. </p>
+<br / >
 
 
-<br / >   
-<h5> <span class="fa fa-ellipsis-v"></span>  Festival Le Marentin : atelier de construction de décors</h5> 
+<br / >
+<h5> <span class="fa fa-ellipsis-v"></span>  Festival Le Marentin : atelier de construction de décors</h5>
         <span style="font-style: italic"> Saint Servais. Ouest-France • vendredi 2 novembre 2018
 </span> </p>
 <p> La compagnie Les Cordes associées organise des ateliers participatifs pour préparer le festival Le Marentin. <br / >
@@ -442,8 +492,8 @@ Un prochain rendez-vous est fixé aux 17 et 18 novembre pour un temps de partage
 
 Les intéressés doivent s'inscrire auprès de l'équipe des Cordes associées. Les inscriptions permettent d'anticiper pour les quantités de café, thé, jus et autres boissons à partager avec l'équipe. <br / >
 
-Contact : <a href="mailto:lescordesassociees@gmail.com"  traget="_blank"> lescordesassociees@gmail.com</a>. Renseignements au 06 99 26 61 91. Sur Facebook : <a href="https://www.facebook.com/festival.le.marentin/" traget="_blank"> festival.le.marentin</a>.)  </p>   
-<br / >   
+Contact : <a href="mailto:lescordesassociees@gmail.com"  traget="_blank"> lescordesassociees@gmail.com</a>. Renseignements au 06 99 26 61 91. Sur Facebook : <a href="https://www.facebook.com/festival.le.marentin/" traget="_blank"> festival.le.marentin</a>.)  </p>
+<br / >
 
 
- </div>  
+ </div>
