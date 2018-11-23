@@ -152,6 +152,7 @@ layout: default
     header_badge_class='primary'
                
 %}
+
 {% capture img_url %}{{site.baseurl}}/img/le_spacetacle.sm.jpg{% endcapture %}
 {% include programm_row.html
     content_position="right"
@@ -164,101 +165,159 @@ layout: default
     img_title='Le Spacetacle'
     body='<p>Spectacle vocal et musical.</p><p><strong>Sur réservation</strong></p>'
 %}
+
+
 {% include programm_row.html
     hour="12h20"
-    header_title='Présentation du festival' 
+    header_title='Présentation du festival'
     header_badge='Scène musicale'
     header_badge_class='info'
     body='<p>Venez découvrir le projet derrière le festival Le Marentin.<br />Les intervenants, les partenaires, la portée du projet...</p>'
 %}
+
 {% capture img_url %}{{site.baseurl}}/img/DSC_8280.jpg{% endcapture %}
 {% include programm_row.html
     content_position="right"
     hour="12h45"
-    header='Artemisia & Lucas <span class="badge badge-info float-right">Scène musicale</span>'
-    img_url=img_url
-    body='<p>Guitare voix</p>'
+   header_title='Concert'
+   header_subtitle='Artemisia & Lucas'
+header_badge='Scène musicale'
+header_badge_class='info'
+img_url=img_url
+img_title='Artemisia & Lucas'
+body='<p>Guitare voix</p>'
 %}
+
 {% capture img_url %}{{site.baseurl}}/img/DSC_8323.jpg{% endcapture %}
 {% include programm_row.html
     hour="13h30"
-    header='Cie après la pluie <span class="badge badge-success float-right">Scène extérieure</span>'
-    img_url=img_url
-    body='<p>Danse</p>'
+header_subtitle='Cie après la pluie'
+header_badge='Scène extérieure'
+header_badge_class='success'
+img_url=img_url
+img_title='Cie après la pluie'
+body='<p>Danse</p>'
 %}      </div>
+
 <div id="samedi2">
     {% capture img_url %}{{site.baseurl}}/img/DSC_8382.jpg{% endcapture %}
 {% include programm_row.html
     content_position="right"
     hour="14h00"
-    header='Artemisia Hood <span class="badge badge-info float-right">Scène musicale</span>'
-    img_url=img_url
-    body='<p>Chansons pour enfants</p>'
+   header_title='Concert'
+header_subtitle='Artemisia Hood'
+header_badge='Scène musicale'
+header_badge_class='info'
+img_url=img_url
+img_title='Artemisia Hood'
+body='<p>Chansons pour enfants</p>'
 %}
+
 {% capture img_url %}{{site.baseurl}}/img/DSC_8439.jpg{% endcapture %}
 {% include programm_row.html
     hour="14h20"
-    header='Mère misère <span class="badge badge-success float-right">Scène extérieure</span>'
-    img_url=img_url
-    body='<p>Escola de actores « EVOÉ », Lisboa<br />Théâtre physique</p>'
+header_subtitle='Mère misère'
+header_badge='Scène extérieure'
+header_badge_class='success'
+img_url=img_url
+img_title='Mère misère'
+body='<p>Escola de actores « EVOÉ », Lisboa<br />Théâtre physique</p>'
 %}
+
     {% capture img_url %}{{site.baseurl}}/img/DSC_8576.jpg{% endcapture %}
 {% include programm_row.html
     content_position="right"
     hour="14h50"
-    header='« La Chenille » <span class="badge badge-warning float-right">Déambulation</span>'
-     img_url=img_url
-    body='<p>Déambulation rocambolesque de Yves Derrien et Marion Darcis, Compagnie Les Cordes Associées</p>'
+  header_title='La Chenille'
+header_subtitle='Cie Les Cordes Associées'
+header_badge='Déambulation'
+header_badge_class='warning'
+img_url=img_url
+img_title='La Chenille'
+body='<p>Déambulation rocambolesque de Yves Derrien et Marion Darcis, Compagnie Les Cordes Associées</p>'
 %}
+
         {% capture img_url %}{{site.baseurl}}/img/DSC_8581.jpg{% endcapture %}
 {% include programm_row.html
     hour="15h10"
-            header='Trapèze à l’aveugle <span class="badge badge-primary float-right">Chapiteau</span>'
-     img_url=img_url
+     header_title='Trapèze à l’aveugle'
+header_badge='Chapiteau'
+header_badge_class='primary'
+img_url=img_url
+img_title='Trapèze à l’aveugle'
     body='<p>Aziliz de l’école de cirque dédale de Clown</p>'
 %}
         {% capture img_url %}{{site.baseurl}}/img/DSC_8619.jpg{% endcapture %}
 {% include programm_row.html
     content_position="right"
     hour="15h25"
-    header='Conte et tissu aérien <span class="badge badge-primary float-right">Chapiteau</span>'
-        img_url=img_url
-    body='<p>Compagnie Esperluette</p>'
+ header_title='Conte et tissu aérien'
+header_subtitle='Cie Esperluette'
+header_badge='Chapiteau'
+header_badge_class='primary'
+img_url=img_url
+img_title='Cie Esperluette'
+    body='Conte et tissu aérien'
 %}      </div>
+
     <div id="samedi3">
 {% capture img_url %}{{site.baseurl}}/img/DSC_8343.jpg{% endcapture %}
 {% include programm_row.html
     hour="16h00"
-    header='Cie après la pluie <span class="badge badge-success float-right">Scène extérieure</span>'
-    img_url=img_url
+   header_title='Danse'
+header_subtitle='Cie Après la Pluie'
+header_badge='Scène extérieure'
+header_badge_class='success'
+img_url=img_url
+img_title='Cie Après la Pluie'
     body='<p>Danse</p>'
 %}
+
 {% capture img_url %}{{site.baseurl}}/img/moon_swing.sm.jpg{% endcapture %}
 {% include programm_row.html
     content_position="right"
     hour="16h30"
-    header='Moon Swing Trio <span class="badge badge-info float-right">Scène musicale</span>'
-    img_url=img_url
+    header_title='Concert'
+header_subtitle='Moon Swing Trio'
+header_badge='Scène musicale'
+header_badge_class='info'
+img_url=img_url
+img_title='Moon Swing Trio'
 %}
+
+
 {% capture img_url %}{{site.baseurl}}/img/DSC_8703.jpg{% endcapture %}
 {% include programm_row.html
     hour="17h10"
-    header='« La Fabrique » <span class="badge badge-success float-right">Scène extérieure</span>'
-    img_url=img_url
+    header_title='La Fabrique'
+header_badge='Scène extérieure'
+header_badge_class='success'
+img_url=img_url
+img_title='La Fabrique'
     body='<p>Groupe acrobatique de l’école dédale de Clown</p>'
 %}
+
 {% capture img_url %}{{site.baseurl}}/img/moon_swing.sm.jpg{% endcapture %}
 {% include programm_row.html
     content_position="right"
     hour="17h40"
-    header='Moon Swing Trio <span class="badge badge-info float-right">Scène musicale</span>'
-    img_url=img_url
-%}      </div>
+    header_title='Concert'
+header_subtitle='Moon Swing Trio'
+header_badge='Scène musicale'
+header_badge_class='info'
+img_url=img_url
+img_title='Moon Swing Trio'
+%}
+  </div>
+
+
         <div id="samedi4">
 {% capture img_url %}{{site.baseurl}}/img/DSC_8771 - Copie.jpg{% endcapture %}
 {% include programm_row.html
     hour="18h05"
-    header='Mère misère <span class="badge badge-success float-right">Scène extérieure</span>'
+    header_subtitle='Mère misère'
+header_badge='Scène extérieure'
+header_badge_class='success'
     img_url=img_url
     body='<p>Escola de actores « EVOÉ », Lisboa<br />Théâtre physique</p>'
 %}
@@ -266,15 +325,21 @@ layout: default
 {% include programm_row.html
     content_position="right"
     hour="18h40"
-    header='Yannig Bleinhant <span class="badge badge-info float-right">Scène musicale</span>'
+     header_title='Concert'
+header_subtitle='Yannig Bleinhant'
+header_badge='Scène musicale'
+header_badge_class='info'
                img_url=img_url
     body='<p>Reprise de chansons françaises</p>'
 %}      </div>
+
 <div id="samedi5">
     {% capture img_url %}{{site.baseurl}}/img/bazar_acoustik.jpg{% endcapture %}
 {% include programm_row.html
     hour="20h00"
-    header='Bazar acoustik <span class="badge badge-danger float-right">Bar L’inattendue</span>'
+       header_title='Bazar Acoustik'
+header_badge='Bar l’Inattendue'
+header_badge_class='danger'
     img_url=img_url
 %}      </div>
         </div>
