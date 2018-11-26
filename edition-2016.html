@@ -225,7 +225,7 @@ body='<p>Chansons pour enfants</p>
 {% include programm_row.html
     hour="14h20"
 header_title='Mère misère'
-        header_subtitle='Evoé,<br />Escola de Actores'
+        header_subtitle='Escola de Actores<br />Evoé'
 header_badge='Scène extérieure'
 header_badge_class='success'
 img_url=img_url
@@ -270,11 +270,11 @@ img_title='Trapèze à l’aveugle'
     content_position="right"
     hour="15h25"
  header_title='Conte et tissu aérien'
-header_subtitle='Cie Esperluette'
+    header_subtitle='<small>Compagnie</small><br /> Esperluette'
 header_badge='Chapiteau'
 header_badge_class='primary'
 img_url=img_url
-img_title='Cie Esperluette'
+img_title='Compagnie Esperluette'
     body='<p>Conte et tissu aérien</p>'
 %}      </div>
 
@@ -283,12 +283,14 @@ img_title='Cie Esperluette'
 {% include programm_row.html
     hour="16h00"
    header_title='Danse'
-header_subtitle='Cie Après la Pluie'
+        header_subtitle='<small>Compagnie</small><br /> Après La Pluie'
 header_badge='Scène extérieure'
 header_badge_class='success'
 img_url=img_url
-img_title='Cie Après la Pluie'
-    body='<p>Danse</p>'
+img_title='Compagnie Après la Pluie'
+        body='<p>Danse</p>
+   <p class="text-center"><a class="btn btn-info" href="http://cie.apreslapluie.free.fr/" role="button">Site internet</a></p>'
+
 %}
 
 {% capture img_url %}{{site.baseurl}}/img/moon_swing.sm.jpg{% endcapture %}
@@ -308,11 +310,15 @@ img_title='Moon Swing Trio'
 {% include programm_row.html
     hour="17h10"
     header_title='La Fabrique'
+        header_subtitle='<small>Ecole de cirque</small><br /> Dédale de Clown'
 header_badge='Scène extérieure'
 header_badge_class='success'
 img_url=img_url
 img_title='La Fabrique'
-    body='<p>Groupe acrobatique de l’école dédale de Clown</p>'
+       body='<p>Groupe acrobatique<br />
+       Ecole de cirque Dédale de Clown, 29 </p>
+    <p class="text-center"><a class="btn btn-info" href="http://www.dedale-cirque.fr/spip.php?article12" role="button">Site internet</a></p>'
+
 %}
 
 {% capture img_url %}{{site.baseurl}}/img/moon_swing.sm.jpg{% endcapture %}
@@ -333,7 +339,8 @@ img_title='Moon Swing Trio'
 {% capture img_url %}{{site.baseurl}}/img/DSC_8771 - Copie.jpg{% endcapture %}
 {% include programm_row.html
     hour="18h05"
-    header_subtitle='Mère misère'
+    header_title='Mère misère'
+header_subtitle='Escola de Actores<br />Evoé'
 header_badge='Scène extérieure'
 header_badge_class='success'
     img_url=img_url
