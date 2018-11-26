@@ -187,7 +187,8 @@ header_badge='Scène musicale'
 header_badge_class='info'
 img_url=img_url
 img_title='Artemisia & Lucas'
-body='<p>Guitare voix</p>'
+body='<p>Guitare voix</p>
+<p class="text-center"><a class="btn btn-success" href="https://www.reverbnation.com/artemisiahood" role=button">Ecouter sur Reverbnation</a></p>'
 %}
 
 {% capture img_url %}{{site.baseurl}}/img/DSC_8323.jpg{% endcapture %}
@@ -199,7 +200,8 @@ header_badge='Scène extérieure'
 header_badge_class='success'
 img_url=img_url
 img_title='Cie après la pluie'
-body='<p>Danse</p>'
+body='<p>Danse</p>
+    <p class="text-center"><a class="btn btn-info" href="http://cie.apreslapluie.free.fr/" role=button">Site internet</a></p>'
 %}      </div>
 
 <div id="samedi2">
@@ -213,18 +215,25 @@ header_badge='Scène musicale'
 header_badge_class='info'
 img_url=img_url
 img_title='Artemisia Hood'
-body='<p>Chansons pour enfants</p>'
+body='<p>Chansons pour enfants</p>
+    <p class="text-center"><a class="btn btn-success" href="https://www.reverbnation.com/artemisiahood" role=button">Ecouter sur Reverbnation</a></p>'
+
 %}
 
 {% capture img_url %}{{site.baseurl}}/img/DSC_8439.jpg{% endcapture %}
 {% include programm_row.html
     hour="14h20"
 header_title='Mère misère'
+        header_subtitle='Evoé, escola de actores'
 header_badge='Scène extérieure'
 header_badge_class='success'
 img_url=img_url
 img_title='Mère misère'
-body='<p>Escola de actores « EVOÉ », Lisboa<br />Théâtre physique</p>'
+        body='<p><strong>Théâtre physique</strong> <br />
+        Avec Beatriz Silva, Joana Santos, Johan Philippe et Inês Galvão Teles. <br />
+        Evoé, Escola de actores - Lisboa, Portugal</p>
+<p class="text-center"><a class="btn btn-info" href="http://evoe.pt/artigos/espectaculo_curso-teatro-fisico/" role=button">Site internet</a></p>'
+
 %}
 
     {% capture img_url %}{{site.baseurl}}/img/DSC_8576.jpg{% endcapture %}
@@ -232,23 +241,28 @@ body='<p>Escola de actores « EVOÉ », Lisboa<br />Théâtre physique</p>'
     content_position="right"
     hour="14h50"
   header_title='La Chenille'
-header_subtitle='Cie Les Cordes Associées'
+header_subtitle='Compagnie Les Cordes Associées'
 header_badge='Déambulation'
 header_badge_class='warning'
 img_url=img_url
 img_title='La Chenille'
-body='<p>Déambulation rocambolesque de Yves Derrien et Marion Darcis, Compagnie Les Cordes Associées</p>'
+body='<p>Déambulation rocambolesque de Yves Derrien et Marion Darcis</p>
+<p class="text-center"><a class="btn btn-info" href="http://www.lescordesassociees.fr" role=button">Site internet</a></p>'
+
 %}
 
         {% capture img_url %}{{site.baseurl}}/img/DSC_8581.jpg{% endcapture %}
 {% include programm_row.html
     hour="15h10"
      header_title='Trapèze à l’aveugle'
+    header_subtitle='Ecole de cirque Dédale de Clown'
 header_badge='Chapiteau'
 header_badge_class='primary'
 img_url=img_url
 img_title='Trapèze à l’aveugle'
-    body='<p>Aziliz de l’école de cirque Dédale de Clown</p>'
+    body='<p>Avec Aziliz <br />
+    Ecole de cirque Dédale de Clown (29) </p>
+    <p class="text-center"><a class="btn btn-info" href="http://www.dedale-cirque.fr/spip.php?article12" role=button">Site internet</a></p>'
 %}
         {% capture img_url %}{{site.baseurl}}/img/DSC_8619.jpg{% endcapture %}
 {% include programm_row.html
@@ -273,7 +287,9 @@ header_badge='Scène extérieure'
 header_badge_class='success'
 img_url=img_url
 img_title='Cie Après la Pluie'
-    body='<p>Danse</p>'
+    body='<p>Danse</p>
+   <p class="text-center"><a class="btn btn-info" href="http://cie.apreslapluie.free.fr/" role=button">Site internet</a></p>'
+
 %}
 
 {% capture img_url %}{{site.baseurl}}/img/moon_swing.sm.jpg{% endcapture %}
@@ -293,11 +309,14 @@ img_title='Moon Swing Trio'
 {% include programm_row.html
     hour="17h10"
     header_title='La Fabrique'
+       header_subtitle="Ecole de cirque Dédale de Clown'
 header_badge='Scène extérieure'
 header_badge_class='success'
 img_url=img_url
 img_title='La Fabrique'
-    body='<p>Groupe acrobatique de l’école dédale de Clown</p>'
+    body='<p>Groupe acrobatique<br />
+       Ecole de cirque Dédale de Clown (29) </p>
+    <p class="text-center"><a class="btn btn-info" href="http://www.dedale-cirque.fr/spip.php?article12" role=button">Site internet</a></p>'
 %}
 
 {% capture img_url %}{{site.baseurl}}/img/moon_swing.sm.jpg{% endcapture %}
@@ -318,11 +337,17 @@ img_title='Moon Swing Trio'
 {% capture img_url %}{{site.baseurl}}/img/DSC_8771 - Copie.jpg{% endcapture %}
 {% include programm_row.html
     hour="18h05"
-    header_subtitle='Mère misère'
+        header_title='Mère misère'
+        header_subtitle='Evoé, escola de actores'
 header_badge='Scène extérieure'
 header_badge_class='success'
-    img_url=img_url
-    body='<p>Escola de actores « EVOÉ », Lisboa<br />Théâtre physique</p>'
+img_url=img_url
+img_title='Mère misère'
+        body='<p><strong>Théâtre physique</strong> <br />
+        Avec Beatriz Silva, Joana Santos, Johan Philippe et Inês Galvão Teles. <br />
+        Evoé, Escola de actores - Lisboa, Portugal</p>
+<p class="text-center"><a class="btn btn-info" href="http://evoe.pt/artigos/espectaculo_curso-teatro-fisico/" role=button">Site internet</a></p>'
+
 %}
             {% capture img_url %}{{site.baseurl}}/img/DSC_8798.jpg{% endcapture %}
 {% include programm_row.html
