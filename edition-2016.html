@@ -158,7 +158,7 @@ layout: default
     content_position="right"
     hour="11h40"
     header_title='« Le Spacetacle »'
-                header_subtitle='<small>Compagnie</small><br /> Réversible'
+ header_subtitle='<small>Compagnie</small><br /> Réversible'
   header_badge='Chapiteau'
  header_badge_class='primary'
    img_url=img_url
@@ -225,7 +225,7 @@ body='<p>Chansons pour enfants</p>
 {% include programm_row.html
     hour="14h20"
 header_title='Mère misère'
-        header_subtitle='Escola de Actores<br />Evoé'
+    header_subtitle='<small>Escola de Actores</small><br />Evoé'
 header_badge='Scène extérieure'
 header_badge_class='success'
 img_url=img_url
@@ -339,13 +339,17 @@ img_title='Moon Swing Trio'
 {% capture img_url %}{{site.baseurl}}/img/DSC_8771 - Copie.jpg{% endcapture %}
 {% include programm_row.html
     hour="18h05"
-    header_title='Mère misère'
-header_subtitle='Escola de Actores<br />Evoé'
+  header_title='Mère misère'
+    header_subtitle='<small>Escola de Actores</small><br />Evoé'
 header_badge='Scène extérieure'
 header_badge_class='success'
-    img_url=img_url
-    body='<p>Escola de actores « EVOÉ », Lisboa<br />Théâtre physique</p>'
-%}
+img_url=img_url
+img_title='Mère misère'
+        body='<p><strong>Théâtre physique</strong> <br />
+        Avec Beatriz Silva, Joana Santos, Johan Philippe et Inês Galvão Teles. <br />
+        Evoé, Escola de actores, Lisboa, Portugal</p>
+<p class="text-center"><a class="btn btn-info" href="http://evoe.pt/artigos/espectaculo_curso-teatro-fisico/" role="button">Site internet</a></p>'
+
             {% capture img_url %}{{site.baseurl}}/img/DSC_8798.jpg{% endcapture %}
 {% include programm_row.html
     content_position="right"
