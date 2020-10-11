@@ -65,6 +65,34 @@ layout: default
             <div style="position:absolute;top:0;bottom:0;left:0;right:50%;border-right:1px solid white"></div>
                 	
   <div id="samedi1">
+	  
+	  {% include programm_row.html
+              content_position="right"
+    hour="14h00"
+    header_title='Présentation du festival'
+    body='<p>Venez découvrir le projet derrière le festival Le Marentin.<br />Les intervenants, les partenaires, la portée du projet...</p>'
+%}
+
+	  
+{% capture img_url %}{{site.baseurl}}/img/affiche fgobeurs.jpg{% endcapture %}
+{% include programm_row.html
+    hour="14h15"
+    header_title='« Vies de Chimères »'
+	header_subtitle='Les Chimères de Brest'
+	header_badge='Scène extérieure'
+	header_badge_class='success'
+    img_url=img_url
+    img_title='Vies de Chimères, Les Chimères de Brest'
+    body='<p><strong>Programmation scène ouverte </strong><br />
+ D’où ça sort ?! C’est moche et ça porte des noms que c’est même pas sûr qu’on peut les dire !! 
+Qui ? Mais les chimères pardi ! Nos conteureuses reviennent de loin pour vous raconter leur histoire !
+Alors venez créer votre propre chimère, et écouter l’histoire des plus célèbres d’entres elles ! <br />
+Point de départ de l’histoire : un projet collaboratif qui a mis en lien des néophytes de la gravure avec 
+des plus expérimentés pour créer un livret où toutes les créations se mélangent pour n’en faire qu’une : 
+les chimères brestoises. Un livret entièrement fait à la main (sauf le papier, l’encre et le fil ...) 
+qui donne vie à des créatures étranges dont les conteureuses vont vous raconter les aventures.
+</p>'
+%}
 
 
 			        </div>
