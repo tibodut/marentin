@@ -47,11 +47,9 @@ layout: default
 <div id="le-programme" class="bg-secondary padding-top padding-bottom text-white py-5">
     <div class="container">
         <h4>Le Programme</h4>
-        <a class="btn btn-info" href="{{site.baseurl}}/img/Le-Programme.jpg" target="_blank" role="button"><span class="fa fa-archive"></span> Télécharger le programme </a><br />
-
 
         <div class="text-center">
-            <p>Samedi</p>
+             <h5 class="text-center">Samedi 24 octobre 2020</h5>   
             <p><a class="btn btn-default" href="#samedi1" role="button" style="background:rgba(255,255,255,.7)"> 14h-16h</a>
                 <a class="btn btn-default" href="#samedi2" role="button" style="background:rgba(255,255,255,.7)"> 16h-18h</a>
                 <a class="btn btn-default" href="#samedi3" role="button" style="background:rgba(255,255,255,.7)"> 18h-19h</a>
@@ -60,9 +58,9 @@ layout: default
         <br />
         <br />
         <br />
-        <h5 class="text-center">Samedi 24 octobre 2020</h5>
         <br />
-        <div class="timeline-v position-relative">
+
+	    <div class="timeline-v position-relative">
             <div style="position:absolute;top:0;bottom:0;left:0;right:50%;border-right:1px solid white"></div>
             <div id="samedi1">
 	
@@ -77,14 +75,15 @@ header_subtitle='<small>Compagnie</small><br /> Princesses Gérard'
     img_url=img_url
     img_title='Un p’tit caillou ???, Cie Princesses Gérard'
                 body='<p><strong> Humour décalé et danse loufoque <br /> Création 2016 </strong><br />
-               Du gadget, de la plume, de la langue et des saucisses, les inséparables princesses Gérard vous plongent dans la tornade de leur quotidien. <br />
+Du gadget, de la plume, de la langue et des saucisses, les inséparables princesses Gérard vous plongent dans la tornade de leur quotidien. <br />
 Un quotidien tout crassou d’amour, franchement déjanté, entre cartoon et fête foraine. <br />
 On piaffe, on s’esclaffe, et on finit par avoir des envies de gravier. <br />
 Princesses Gérard, c'est bon comme un caillou tendre...
 </p>
 <p class="text-center"><a class="btn btn-info" href="http://princessesgerard.wix.com/clowndanse" role="button">Site internet</a> </p>
 
-<p class="text-center"><a class="btn btn-info" href="https://www.facebook.com/princessesgerard/" role="button">Page facebook</a> </p>'%}
+<p class="text-center"><a class="btn btn-info" href="https://www.facebook.com/princessesgerard/" role="button">Page facebook</a> </p>'
+  %}
              
 	    
 		    
@@ -100,7 +99,12 @@ Princesses Gérard, c'est bon comme un caillou tendre...
     img_url=img_url
     img_title='Vies de Chimères, Les Chimères de Brest'
     body='<p><strong>Programmation scène ouverte </strong><br />
-	          
+ D’où ça sort ?! C’est moche et ça porte des noms que c’est même pas sûr qu’on peut les dire !! Qui ? Mais les chimères pardi ! Nos conteureuses reviennent de loin pour vous raconter leur histoire ! Alors venez créer votre propre chimère, et écouter l’histoire des plus célèbres d’entres elles ! <br />
+Point de départ de l’histoire : un projet collaboratif qui a mis en lien des néophytes de la gravure avec des plus expérimentés pour créer un livret où toutes les créations se mélangent pour n’en faire qu’une : les chimères brestoises. Un livret entièrement fait à la main (sauf le papier, l’encre et le fil ...) qui donne vie à des créatures étranges dont les conteureuses vont vous raconter les aventures.
+</p>'
+%}
+            </div>
+     
 		    
 {% capture img_url %}{{site.baseurl}}/img/Poulout&Minima3.jpg{% endcapture %}
 {% include programm_row.html
