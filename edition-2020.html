@@ -68,7 +68,8 @@ layout: default
               content_position="right"
     hour="14h00"
     header_title='Présentation du festival'
-    body='<p>Venez découvrir le projet derrière le festival Le Marentin.<br />Les intervenants, les partenaires, la portée du projet...</p>'
+    body='<p>Présentation du festival par Mme Loyale !<br />
+	  Venez découvrir le projet derrière le festival Le Marentin.<br />Les intervenants, les partenaires, la portée du projet...</p>'
 %}
 
 	  
@@ -96,7 +97,48 @@ qui donne vie à des créatures étranges dont les conteureuses vont vous racont
 			        </div>
 
    <div id="samedi2">
+{% capture img_url %}{{site.baseurl}}/img/thumbnail_largement.jpg{% endcapture %}
+{% include programm_row.html
+content_position="right"
+    hour="15h15"
+    header_title='« L’anniversaire de Jade de Rufus »'
+	header_subtitle='<small>Compagnie</small><br /> Cestpasduluxe'
+	header_badge='Scène extérieure'
+	header_badge_class='success'
+    img_url=img_url
+    img_title='L’anniversaire de Jade de Rufus, Cie Cestpasduluxe'
+    body='<p><strong>Programmation scène ouverte </strong><br />
+Les chiens sont les meilleurs amis de l’homme ! <br />
+Leur place n’est plus à prouver parmi nous. Ils sont aujourd’hui nos guides, nos confidents, ou encore les nounous de nos enfants, pour notre plus grand bonheur ! <br />
+De son côté l’humain se plie en 4 pour les rendre heureux, mais à quels prix ? <br />
+Entre dégustation de l’extrême, jonglerie, envolées clownesques et autres cabotinages endimanchés, ne ratez pas un menu que vous n’êtes pas prêt.e.s d’oublier...! <br />
+Apportez vos croquettes et vos gâteaux ! 
+</p>'
+%}
 
+	   
+	   {% capture img_url %}{{site.baseurl}}/img/princesses-gerard.jpg{% endcapture %}
+{% include programm_row.html
+      hour="15h15"
+    header_title='« Un p’tit caillou ??? »'
+header_subtitle='<small>Compagnie</small><br /> Princesses Gérard'
+	header_badge='Scène extérieure'
+	header_badge_class='success'
+    img_url=img_url
+    img_title='Un p’tit caillou ???, Cie Princesses Gérard'
+body='<p><strong> Humour décalé et danse loufoque <br /> Création 2016 </strong><br />
+Du gadget, de la plume, de la langue et des saucisses, les inséparables princesses Gérard vous plongent dans la tornade de leur quotidien. <br />
+Un quotidien tout crassou d’amour, franchement déjanté, entre cartoon et fête foraine. <br />
+On piaffe, on s’esclaffe, et on finit par avoir des envies de gravier. <br />
+Princesses Gérard, c'est bon comme un caillou tendre...
+</p>
+<p class="text-center">
+<a class="btn btn-info" href=" http://princessesgerard.wix.com/clowndanse " role="button">Site internet</a> 
+<a class="btn btn-info" href=" https://www.facebook.com/princessesgerard/" role="button">Page facebook</a> 
+</p>'
+%}
+
+	   
 
 			        </div>
 		    
