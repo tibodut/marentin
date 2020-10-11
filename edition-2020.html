@@ -63,7 +63,28 @@ layout: default
 
 	    <div class="timeline-v position-relative">
             <div style="position:absolute;top:0;bottom:0;left:0;right:50%;border-right:1px solid white"></div>
-           
+                	  <div id="samedi4">   
+		  
+{% capture img_url %}{{site.baseurl}}/img/Poulout-Minima3.jpg{% endcapture %}
+{% include programm_row.html
+      hour="17h15"
+    header_title='« Le temps d’une sieste »'
+header_subtitle='<small>Collectif</small><br /> Kaboum'
+	header_badge='Scène extérieure'
+	header_badge_class='success'
+    img_url=img_url
+    img_title='Le temps d’une sieste, Collectif Kaboum'
+                body='<p><strong> Portés acrobatiques <br /> Nouvelle création</strong><br />
+                Entre le travail, le café, la création, l’entraînement, le quotidien, le café, le couple, la parentalité... <br />
+Une pause. <br />
+On respire dans la tempête pour se chuchoter l’intime. Le temps d’une sieste.
+</p>
+<p class="text-center"><a class="btn btn-info" href="https://www.collectifkaboum.com/le-spectacle" role="button">Site internet</a> </p>
+<p class="text-center"><a class="btn btn-info" href="https://www.facebook.com/CollectifKaboum/" role="button">Page facebook</a> </p>'
+%}
+		    
+      </div>
+
 
         </div>
     </div>
