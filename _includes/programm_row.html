@@ -17,8 +17,8 @@
 %}
 	</div>
     <div class="col clearfix{% if include.content_position == 'right' %} order-sm-first{% endif %}">
-{% capture content_position2 %}{% include.content_position == 'right' %}left{% else %}right{% endif %}{% endcapture %}
 {% if include.title2 or include.body2 or include.header2 or include.img_url2 %}
+    {% capture content_position2 %}{{ ( include.content_position == 'right' ? 'left' : 'right' ) }}{% endcapture %}
 	{% include programm_card.html
 		content_position=content_position2
 		header=include.header2
