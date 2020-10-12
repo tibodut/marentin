@@ -146,7 +146,7 @@ qui donne vie à des créatures étranges dont les conteureuses vont vous racont
 %}
 			        </div>
 
-<div id="samedi2">
+<div id="samedi2" class="my-3">
 
 {% capture img_url %}{{site.baseurl}}/img/princesses-gerard.jpg{% endcapture %}
 {% include programm_row.html
@@ -174,6 +174,7 @@ Princesses Gérard, c’est bon comme un caillou tendre...</p>
 		      <div id="samedi3">
 
 	{% capture img_url %}{{site.baseurl}}/img/Chimeres.jpg{% endcapture %}
+    {% capture img_url2 %}{{site.baseurl}}/img/thumbnail_largement.jpg{% endcapture %}
 {% include programm_row.html
     content_position="right"
     hour="16h15"
@@ -192,18 +193,12 @@ des plus expérimentés pour créer un livret où toutes les créations se méla
 les chimères brestoises. Un livret entièrement fait à la main (sauf le papier, l’encre et le fil ...)
 qui donne vie à des créatures étranges dont les conteureuses vont vous raconter les aventures.
 </p>'
-%}
-
-{% capture img_url %}{{site.baseurl}}/img/thumbnail_largement.jpg{% endcapture %}
-{% include programm_row.html
-
-	hour="16h15"
-	header_title='« L’anniversaire de Jade de Rufus »'
-	header_subtitle='<small>Compagnie</small><br />Cestpasduluxe'
-	header_badge='Scène extérieure'
-	header_badge_class='success'
-	img_url=img_url
-	img_title='L’anniversaire de Jade de Rufus, Cie Cestpasduluxe'
+	header_title2='« L’anniversaire de Jade de Rufus »'
+	header_subtitle2='<small>Compagnie</small><br />Cestpasduluxe'
+	header_badge2='Scène extérieure'
+	header_badge_class2='success'
+	img_url2=img_url2
+	img_title2='L’anniversaire de Jade de Rufus, Cie Cestpasduluxe'
 	body='<p><strong>Programmation scène ouverte</strong><br />
 Les chiens sont les meilleurs amis de l’homme !<br />
 Leur place n’est plus à prouver parmi nous. Ils sont aujourd’hui nos guides, nos confidents, ou encore les nounous de nos enfants, pour notre plus grand bonheur ! <br />
