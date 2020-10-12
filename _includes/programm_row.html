@@ -2,47 +2,35 @@
     <div class="col-sm-2 col-lg-1 text-center">
         <p class="bg-primary m-0 mt-3 mt-sm-0">{{include.hour}}</p>
     </div>
-    <div class="col clearfix{% if include.content_position != 'right' %} order-sm-first{% endif %}">
-        <div class="card text-dark mx-sm-0 bs-popover-{{ include.content_position | default: 'left' }}">
-            <div class="popover" style="{% if include.content_position != 'right' %}right: 0;left: auto;{% else %}left:0;right:auto;{% endif %}top:0;bottom:0;border:none;">
-                <div class="arrow d-none d-sm-block" style="position: absolute;"></div>
-            </div>
-{% if include.header %}
-            <div class="card-header clearfix pb-1">
-                {{ include.header }}
-            </div>
-{% elsif include.header_title or include.header_badge or include.header_subtitle %}
-            <div class="card-header clearfix pb-1">
-    {% unless include.header_subtitle %}
-        {% if include.header_badge %}
-                <span class="badge badge-{{ include.header_badge_class | default: 'default' }} float-right">{{ include.header_badge }}</span>
-        {% endif %}
-    {% endunless %}
-    {% if include.header_title %}
-                <h5 class="card-title">{{ include.header_title }}</h5>
-    {% endif %}
-    {% if include.header_subtitle %}
-        {% if include.header_badge %}
-                <span class="badge badge-{{ include.header_badge_class | default: 'default' }} float-right">{{ include.header_badge }}</span>
-        {% endif %}
-                <h6 class="card-subtitle text-muted">{{ include.header_subtitle }}</h6>
-    {% endif %}
-            </div>
+	<div class="col clearfix{% if include.content_position != 'right' %} order-sm-first{% endif %}">
+{% include programm_card.html
+	content_position=include.content_position
+	header=include.header
+	header_title=include.header_title
+	header_subtitle=include.header_subtitle
+	header_badge=include.header_badge
+	header_badge_class=include.header_badge_class
+	img_fluid=include.img_fluid
+	img_url=include.img_url
+	img_title=include.img_title
+	body=include.body
+%}
+	</div>
+    <div class="col clearfix{% if include.content_position == 'right' %} order-sm-first{% endif %}">
+{% set content_position2 = (include.content_position == 'right' ? 'left' : 'right') %}
+{% if include.title2 or include.body2 or include.header2 or include.img_url2 %}
+	{% include programm_card.html
+		content_position=content_position2
+		header=include.header2
+		header_title=include.header_title2
+		header_subtitle=include.header_subtitle2
+		header_badge=include.header_badge2
+		header_badge_class=include.header_badge_class2
+		img_fluid=include.img_fluid2
+		img_url=include.img_url2
+		img_title=include.img_title2
+		body=include.body2
+	%}
 {% endif %}
-{% if include.img_fluid and include.img_url %}
-            <img class="img-fluid" src="{{ include.img_url }}" alt="{{ include.img_title }}">
-{% elsif include.img_url %}
-            <img class="img-fluid d-none d-sm-block d-md-block d-lg-none" src="{{ include.img_url }}" alt="{{ include.img_title }}">
-{% endif %}
-            <div class="card-body">
-{% unless include.img_fluid %}
-    {% if include.img_url %}
-                <img class="float-left w-50 pr-3 mb-3 d-sm-none d-md-none d-lg-inline-block" src="{{ include.img_url }}" alt="{{ include.img_title }}">
-    {% endif %}
-{% endunless %}
-                {{ include.body }}
-            </div>
-        </div>
-    </div>
-    <div class="col d-none d-sm-block{% if include.content_position == 'right' %} order-sm-first{% endif %}"></div>
+	</div>
 </div>

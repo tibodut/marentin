@@ -24,7 +24,7 @@ layout: default
                     <a class="btn btn-info" href="#le-festival" role="button"><span class="fa fa-info-circle"></span> Le festival</a><br />
                     <a class="btn btn-primary" href="#le-programme" role="button"><span class="fa fa-bullhorn"></span> Le programme</a><br />
                     <a class="btn btn-default" href="{{site.baseurl}}/img/2020_Affiche-Marentin.jpg" target="_blank" role="button" style="background:rgba(255,255,255,.7)"><span class="fa fa-archive"></span> L'affiche</a><br />
-   
+
                 </p>
             </div>
             <div class="col-sm-4">
@@ -53,7 +53,7 @@ Le festival Le Marentin est un festival qui avait pour envie de voir le jour tou
 Alors voilà, le virus est passé par là… et repassera peut-être… c’est pourquoi aujourd’hui, nous tenons à vous dire en quelques lettres et chiffres ce que nous avons décidé :<br />
 	     <br />
 <div class="text-white">  <a class="btn btn-primary">C</a></div> ’est en octobre que nous souhaitons vous retrouver… le 24 <br />
-<div class="text-white">  <a class="btn btn-primary">O</a></div> n se donne rendez-vous au cœur du bourg de Saint Servais <br /> 
+<div class="text-white">  <a class="btn btn-primary">O</a></div> n se donne rendez-vous au cœur du bourg de Saint Servais <br />
 <div class="text-white">  <a class="btn btn-primary">V</a></div> isons un après-midi spectaculaire <br />
 <div class="text-white">  <a class="btn btn-primary">I</a></div> l y aura des compagnies professionnelles et des groupes amateurs <br />
 <div class="text-white">  <a class="btn btn-primary">D</a></div> e cette manière, le Marentin dira au revoir à la commune qui l’a vu naître ! <br />
@@ -68,17 +68,17 @@ C’est pourquoi cette édition est l’occasion toute trouvée, toute créée, 
 	     <br />
 	     <br />
 
-	<div class="text-white">     
+	<div class="text-white">
 <a class="btn btn-primary" role="button"> Prix libre </a>
-<a class="btn btn-primary" role="button"> Food Truck sur place </a> 
+<a class="btn btn-primary" role="button"> Food Truck sur place </a>
 <a class="btn btn-primary" role="button"> Le bar l’Inattendue ouvert </a>
 </div> </div>
       </div>
   </div>
-	     
-	     
-	     
-	     
+
+
+
+
     </div>
 
 <div id="le-programme" class="bg-secondary padding-top padding-bottom text-white py-5">
@@ -86,7 +86,7 @@ C’est pourquoi cette édition est l’occasion toute trouvée, toute créée, 
         <h4>Le Programme</h4>
 
         <div class="text-center">
-             <h5 class="text-center">Samedi 24 octobre 2020</h5>   
+             <h5 class="text-center">Samedi 24 octobre 2020</h5>
             <p><a class="btn btn-default" href="#samedi1" role="button" style="background:rgba(255,255,255,.7)"> 14h15</a>
                 <a class="btn btn-default" href="#samedi2" role="button" style="background:rgba(255,255,255,.7)"> 15h15</a>
                 <a class="btn btn-default" href="#samedi3" role="button" style="background:rgba(255,255,255,.7)"> 16h15</a>
@@ -100,9 +100,9 @@ C’est pourquoi cette édition est l’occasion toute trouvée, toute créée, 
 
 	    <div class="timeline-v position-relative">
             <div style="position:absolute;top:0;bottom:0;left:0;right:50%;border-right:1px solid white"></div>
-                	
+
   <div id="samedi1">
-	  
+
 	  {% include programm_row.html
               content_position="right"
     hour="14h00"
@@ -111,8 +111,9 @@ C’est pourquoi cette édition est l’occasion toute trouvée, toute créée, 
 	  Venez découvrir le projet derrière le festival Le Marentin.<br />Les intervenants, les partenaires, la portée du projet...</p>'
 %}
 
-	  
+
 {% capture img_url %}{{site.baseurl}}/img/Chimeres.jpg{% endcapture %}
+{% capture img_url2 %}{{site.baseurl}}/img/thumbnail_largement.jpg{% endcapture %}
 {% include programm_row.html
     hour="14h15"
     header_title='« Vies de Chimères »'
@@ -122,38 +123,31 @@ C’est pourquoi cette édition est l’occasion toute trouvée, toute créée, 
     img_url=img_url
     img_title='Vies de Chimères, Les Chimères de Brest'
     body='<p><strong>Programmation scène ouverte </strong><br />
- D’où ça sort ?! C’est moche et ça porte des noms que c’est même pas sûr qu’on peut les dire !! 
+ D’où ça sort ?! C’est moche et ça porte des noms que c’est même pas sûr qu’on peut les dire !!
 Qui ? Mais les chimères pardi ! Nos conteureuses reviennent de loin pour vous raconter leur histoire !
 Alors venez créer votre propre chimère, et écouter l’histoire des plus célèbres d’entres elles ! <br />
-Point de départ de l’histoire : un projet collaboratif qui a mis en lien des néophytes de la gravure avec 
-des plus expérimentés pour créer un livret où toutes les créations se mélangent pour n’en faire qu’une : 
-les chimères brestoises. Un livret entièrement fait à la main (sauf le papier, l’encre et le fil ...) 
+Point de départ de l’histoire : un projet collaboratif qui a mis en lien des néophytes de la gravure avec
+des plus expérimentés pour créer un livret où toutes les créations se mélangent pour n’en faire qu’une :
+les chimères brestoises. Un livret entièrement fait à la main (sauf le papier, l’encre et le fil ...)
 qui donne vie à des créatures étranges dont les conteureuses vont vous raconter les aventures.
 </p>'
-%}
-
-   			
-{% capture img_url %}{{site.baseurl}}/img/thumbnail_largement.jpg{% endcapture %}
-{% include programm_row.html
-	content_position="right"
-	hour="14h15"
-	header_title='« L’anniversaire de Jade de Rufus »'
-	header_subtitle='<small>Compagnie</small><br />Cestpasduluxe'
-	header_badge='Scène extérieure'
-	header_badge_class='success'
-	img_url=img_url
-	img_title='L’anniversaire de Jade de Rufus, Cie Cestpasduluxe'
-	body='<p><strong>Programmation scène ouverte</strong><br />
-Les chiens sont les meilleurs amis de l’homme !<br />
-Leur place n’est plus à prouver parmi nous. Ils sont aujourd’hui nos guides, nos confidents, ou encore les nounous de nos enfants, pour notre plus grand bonheur ! <br />
-De son côté l’humain se plie en 4 pour les rendre heureux, mais à quels prix ?<br />
-Entre dégustation de l’extrême, jonglerie, envolées clownesques et autres cabotinages endimanchés, ne ratez pas un menu que vous n’êtes pas prêt.e.s d’oublier...! <br />
-Apportez vos croquettes et vos gâteaux !</p>'
+    header_title2='« L’anniversaire de Jade de Rufus »'
+    header_subtitle2='<small>Compagnie</small><br />Cestpasduluxe'
+    header_badge2='Scène extérieure'
+    header_badge_class2='success'
+    img_url2=img_url2
+    img_title2='L’anniversaire de Jade de Rufus, Cie Cestpasduluxe'
+    body2='<p><strong>Programmation scène ouverte</strong><br />
+    Les chiens sont les meilleurs amis de l’homme !<br />
+    Leur place n’est plus à prouver parmi nous. Ils sont aujourd’hui nos guides, nos confidents, ou encore les nounous de nos enfants, pour notre plus grand bonheur ! <br />
+    De son côté l’humain se plie en 4 pour les rendre heureux, mais à quels prix ?<br />
+    Entre dégustation de l’extrême, jonglerie, envolées clownesques et autres cabotinages endimanchés, ne ratez pas un menu que vous n’êtes pas prêt.e.s d’oublier...! <br />
+    Apportez vos croquettes et vos gâteaux !</p>'
 %}
 			        </div>
 
 <div id="samedi2">
-				
+
 {% capture img_url %}{{site.baseurl}}/img/princesses-gerard.jpg{% endcapture %}
 {% include programm_row.html
 	hour="15h15"
@@ -175,10 +169,10 @@ Princesses Gérard, c’est bon comme un caillou tendre...</p>
 </p>'
 %}
 			</div>
-		    
-		    
-		      <div id="samedi3"> 
-		    
+
+
+		      <div id="samedi3">
+
 	{% capture img_url %}{{site.baseurl}}/img/Chimeres.jpg{% endcapture %}
 {% include programm_row.html
     content_position="right"
@@ -190,16 +184,16 @@ Princesses Gérard, c’est bon comme un caillou tendre...</p>
     img_url=img_url
     img_title='Vies de Chimères, Les Chimères de Brest'
     body='<p><strong>Programmation scène ouverte </strong><br />
- D’où ça sort ?! C’est moche et ça porte des noms que c’est même pas sûr qu’on peut les dire !! 
+ D’où ça sort ?! C’est moche et ça porte des noms que c’est même pas sûr qu’on peut les dire !!
 Qui ? Mais les chimères pardi ! Nos conteureuses reviennent de loin pour vous raconter leur histoire !
 Alors venez créer votre propre chimère, et écouter l’histoire des plus célèbres d’entres elles ! <br />
-Point de départ de l’histoire : un projet collaboratif qui a mis en lien des néophytes de la gravure avec 
-des plus expérimentés pour créer un livret où toutes les créations se mélangent pour n’en faire qu’une : 
-les chimères brestoises. Un livret entièrement fait à la main (sauf le papier, l’encre et le fil ...) 
+Point de départ de l’histoire : un projet collaboratif qui a mis en lien des néophytes de la gravure avec
+des plus expérimentés pour créer un livret où toutes les créations se mélangent pour n’en faire qu’une :
+les chimères brestoises. Un livret entièrement fait à la main (sauf le papier, l’encre et le fil ...)
 qui donne vie à des créatures étranges dont les conteureuses vont vous raconter les aventures.
 </p>'
 %}
-			      
+
 {% capture img_url %}{{site.baseurl}}/img/thumbnail_largement.jpg{% endcapture %}
 {% include programm_row.html
 
@@ -219,9 +213,9 @@ Apportez vos croquettes et vos gâteaux !</p>'
 %}
        	    </div>
 
-		    
-		    <div id="samedi4">   
-		  
+
+		    <div id="samedi4">
+
 {% capture img_url %}{{site.baseurl}}/img/Poulout-Minima3.jpg{% endcapture %}
 {% include programm_row.html
 	content_position="right"
@@ -241,7 +235,7 @@ On respire dans la tempête pour se chuchoter l’intime. Le temps d’une siest
 <a class="btn btn-info" href="https://www.collectifkaboum.com/le-spectacle" role="button">Site internet</a>
 <a class="btn btn-info" href="https://www.facebook.com/CollectifKaboum/" role="button">Page facebook</a> </p>'
 %}
-		    
+
       </div>
 
 
